@@ -247,15 +247,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .card-img-custom {
-    width: 64px;
-    height: 64px;
-    object-fit: contain;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
     margin-bottom: 1.5rem;
     transition: var(--transition);
+    border: 4px solid var(--card-bg-light);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+[data-bs-theme="dark"] .card-img-custom {
+    border-color: var(--card-bg-dark);
 }
 
 .custom-card:hover .card-img-custom {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.2);
 }
 
 .stat-card {
