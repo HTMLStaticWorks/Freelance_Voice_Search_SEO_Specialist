@@ -20,8 +20,8 @@
             </a>
             
             <div class="d-flex align-items-center order-lg-3">
-                <button class="btn theme-toggle me-2" id="theme-toggle"><i class="bi bi-moon-stars"></i></button>
-                <button class="btn btn-sm btn-outline-primary me-2 d-none d-sm-inline-block" id="rtl-toggle">RTL</button>
+                <button class="btn theme-toggle me-2 d-none d-lg-inline-flex theme-toggle"><i class="bi bi-moon-stars"></i></button>
+                <button class="btn btn-sm btn-outline-primary me-2 d-none d-sm-inline-block d-none d-lg-inline-flex rtl-toggle">RTL</button>
                 <a href="login.html" class="btn btn-primary d-none d-lg-inline-block me-2">Login</a>
                 <a href="register.html" class="btn btn-secondary d-none d-lg-inline-block">Sign Up</a>
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
@@ -44,6 +44,18 @@
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
+                    <div class="d-lg-none mt-4">
+                        <div class="d-flex justify-content-center gap-3 mb-4">
+                            <button class="icon-btn theme-toggle">
+                                <i class="bi bi-moon-stars"></i>
+                            </button>
+                            <button class="icon-btn rtl-toggle">
+                                RTL
+                            </button>
+                        </div>
+                        <a href="login.html" class="btn btn-primary w-100 mb-2">Login</a>
+                        <a href="register.html" class="btn btn-secondary w-100">Sign Up</a>
+                    </div>
                 </div>
             </div>
         </div>
