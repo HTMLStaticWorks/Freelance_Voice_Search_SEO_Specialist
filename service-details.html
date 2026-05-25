@@ -4,34 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Service Details | VoiceSEO Pro</title>
+    <meta name="description" content="Technical deep-dive on Speakable Schema, Conversational NLP, and Local Coordinates. Learn how I execute expert Voice SEO.">
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Custom details styles */
+        .code-window {
+            background-color: #0f172a;
+            color: #38bdf8;
+            border-radius: 12px;
+            padding: 24px;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            overflow-x: auto;
+        }
+        .code-window::before {
+            content: 'JSON-LD Speakable Code Block';
+            position: absolute;
+            top: 4px;
+            right: 12px;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.4);
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header -->
-    <header class="navbar navbar-expand-lg sticky-top bg-body">
+    <header class="navbar navbar-expand-xl sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <i class="bi bi-mic-fill me-2"></i>
                 <span>VoiceSEO<span class="text-secondary">Pro</span></span>
             </a>
             
-            <div class="d-flex align-items-center order-lg-3">
-                <button class="btn theme-toggle me-2 d-none d-lg-inline-flex theme-toggle"><i class="bi bi-moon-stars"></i></button>
-                <button class="btn btn-sm btn-outline-primary me-2 d-none d-sm-inline-block d-none d-lg-inline-flex rtl-toggle">RTL</button>
-                <a href="login.html" class="btn btn-primary d-none d-lg-inline-block me-2">Login</a>
-                <a href="register.html" class="btn btn-secondary d-none d-lg-inline-block">Sign Up</a>
+            <div class="d-flex align-items-center order-xl-3">
+                <button class="icon-btn me-2 d-none d-xl-inline-flex theme-toggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </button>
+                <button class="icon-btn me-2 d-none d-xl-inline-flex rtl-toggle">
+                    RTL
+                </button>
+                <a href="login.html" class="btn btn-primary d-none d-xl-inline-block me-2">Login</a>
+                <a href="register.html" class="btn btn-secondary d-none d-xl-inline-block">Sign Up</a>
+                
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary">VoiceSEO Pro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -44,10 +76,10 @@
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="d-lg-none mt-4">
+                    <div class="d-xl-none mt-4 border-top pt-4">
                         <div class="d-flex justify-content-center gap-3 mb-4">
                             <button class="icon-btn theme-toggle">
-                                <i class="bi bi-moon-stars"></i>
+                                <i class="bi bi-moon-stars-fill"></i>
                             </button>
                             <button class="icon-btn rtl-toggle">
                                 RTL
@@ -62,96 +94,173 @@
     </header>
 
     <main>
-        <!-- Service Hero -->
-        <section class="py-5 bg-tertiary text-white">
+        <!-- Page Header -->
+        <section class="services-header text-center">
             <div class="container py-4">
-                <h1 class="display-4 fw-bold">Schema Markup Implementation</h1>
-                <p class="lead">Giving search engines the context they need to rank you in voice results.</p>
+                <h1 class="display-1 fw-bold mb-4">Technical Execution</h1>
+                <p class="lead mx-auto opacity-90" style="max-width: 700px;">
+                    Understand my workflow, see raw schema structures, and evaluate technical metrics for my core specialities.
+                </p>
             </div>
         </section>
 
+        <!-- Service Tab Switcher -->
         <section class="py-5">
             <div class="container py-5">
-                <div class="row g-5">
+                <div class="row justify-content-center mb-5">
                     <div class="col-lg-8">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80" alt="Schema" class="img-fluid rounded-4 mb-5 shadow">
-                        <h3>What is Schema Markup?</h3>
-                        <p>Schema markup is code that you place on your website to help search engines return more informative results for users. When it comes to voice search, specific schemas like <code>Speakable</code> and <code>FAQPage</code> are critical for smart assistants to read your content aloud.</p>
-                        
-                        <h4 class="mt-5 mb-3">Our FAQ Section</h4>
-                        <div class="accordion shadow-sm" id="serviceFaq">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                        How long does it take to see results?
-                                    </button>
-                                </h2>
-                                <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#serviceFaq">
-                                    <div class="accordion-body">
-                                        Typically, search engines re-index your pages within 1-2 weeks. You should start seeing rich snippets in search results shortly after.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                        Do I need to change my website's design?
-                                    </button>
-                                </h2>
-                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#serviceFaq">
-                                    <div class="accordion-body">
-                                        No, schema is invisible code. It works in the background without affecting your front-end design.
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="nav nav-pills nav-fill bg-body p-2 rounded-4 border shadow-sm" id="detailsTab" role="tablist">
+                            <button class="nav-link active py-3 fw-bold" id="schema-tab" data-bs-toggle="pill" data-bs-target="#schema-pane" type="button" role="tab"><i class="bi bi-code-square me-2"></i>Speakable Schema</button>
+                            <button class="nav-link py-3 fw-bold" id="nlp-tab" data-bs-toggle="pill" data-bs-target="#nlp-pane" type="button" role="tab"><i class="bi bi-chat-left-quote me-2"></i>Conversational NLP</button>
+                            <button class="nav-link py-3 fw-bold" id="local-tab" data-bs-toggle="pill" data-bs-target="#local-pane" type="button" role="tab"><i class="bi bi-geo-alt me-2"></i>Local Coordinates</button>
                         </div>
+                    </div>
+                </div>
 
-                        <div class="mt-5 p-4 bg-body-tertiary rounded-4">
-                            <h4>Specialized Pricing for Schema</h4>
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <div class="custom-card border border-primary">
-                                        <h5>Basic Implementation</h5>
-                                        <h3 class="text-primary">$299<small class="text-muted">/one-time</small></h3>
-                                        <ul class="list-unstyled mt-3">
-                                            <li><i class="bi bi-check2 text-primary"></i> 5 Pages Optimized</li>
-                                            <li><i class="bi bi-check2 text-primary"></i> FAQ Schema</li>
-                                            <li><i class="bi bi-check2 text-primary"></i> Review Schema</li>
-                                        </ul>
+                <div class="tab-content" id="detailsTabContent">
+                    <!-- Pane 1: Speakable Schema -->
+                    <div class="tab-pane fade show active" id="schema-pane" role="tabpanel">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <span class="text-primary fw-bold text-uppercase d-block mb-2">Technical Standard</span>
+                                <h3 class="display-6 fw-bold mb-4">What is Speakable Schema?</h3>
+                                <p class="text-muted mb-4">Google Assistant and smart speakers read specific paragraphs from verified news and business pages. The Schema.org/Speakable property directly tells crawler spiders which sections are pre-formatted for smooth, natural audio text-to-speech rendering.</p>
+                                
+                                <div class="accordion accordion-flush rounded-4 overflow-hidden mb-4" id="schemaAccordion">
+                                    <div class="accordion-item border-0 mb-3 rounded-4">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button rounded-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#sc1">
+                                                Why is it critical for voice rankings?
+                                            </button>
+                                        </h2>
+                                        <div id="sc1" class="accordion-collapse collapse show" data-bs-parent="#schemaAccordion">
+                                            <div class="accordion-body text-muted">
+                                                By pointing smart devices straight to key paragraphs, you avoid index parsing delays, ensuring you claim the single verbal recommendation in featured snippets.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item border-0 mb-3 rounded-4">
+                                        <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed rounded-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#sc2">
+                                                How do I write speakable code?
+                                            </button>
+                                        </h2>
+                                        <div id="sc2" class="accordion-collapse collapse" data-bs-parent="#schemaAccordion">
+                                            <div class="accordion-body text-muted">
+                                                I map target CSS selectors and IDs inside the webpage metadata JSON-LD blocks, verifying code formats via the strict Google Structured Data testing platform.
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="custom-card border border-secondary">
-                                        <h5>Advanced Package</h5>
-                                        <h3 class="text-secondary">$599<small class="text-muted">/one-time</small></h3>
-                                        <ul class="list-unstyled mt-3">
-                                            <li><i class="bi bi-check2 text-secondary"></i> 20 Pages Optimized</li>
-                                            <li><i class="bi bi-check2 text-secondary"></i> Speakable Schema</li>
-                                            <li><i class="bi bi-check2 text-secondary"></i> Organization Schema</li>
-                                        </ul>
-                                    </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <!-- Styled JSON-LD Code Block -->
+                                <div class="code-window shadow-lg">
+<pre class="mb-0 text-break"><code>{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Emergency Plumber Silicon Valley",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      "#voice-summary",
+      "#voice-contact"
+    ]
+  },
+  "url": "https://www.valleyplumbing.com/emergency"
+}</code></pre>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
-                    <div class="col-lg-4">
-                        <div class="custom-card sticky-top" style="top: 100px;">
-                            <h4>Book this Service</h4>
+
+                    <!-- Pane 2: Conversational NLP -->
+                    <div class="tab-pane fade" id="nlp-pane" role="tabpanel">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <span class="text-secondary fw-bold text-uppercase d-block mb-2">Natural Cadence</span>
+                                <h3 class="display-6 fw-bold mb-4">Conversational NLP Optimization</h3>
+                                <p class="text-muted mb-4">Humans use completely different phrasing when speaking verbally instead of typing on a keyboard. Conversational search engines evaluate content flow. I structure target pages into clear Q&A nodes that answer the exact conversational questions smart speaker users present hands-free.</p>
+                                <ul class="list-unstyled">
+                                    <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-secondary me-3 mt-1"></i> <div><strong>Cadence Alignment:</strong> Sentences are tailored to be spoken aloud under 10 seconds.</div></li>
+                                    <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-secondary me-3 mt-1"></i> <div><strong>Intent Mapping:</strong> Focus on Question words (Who, What, Where, When, How).</div></li>
+                                    <li class="d-flex align-items-start"><i class="bi bi-check-circle-fill text-secondary me-3 mt-1"></i> <div><strong>Semantic Density:</strong> Increasing related synonyms to bypass basic algorithmic filters.</div></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="NLP Optimization" class="img-fluid rounded-4 shadow border">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pane 3: Local Coordinates -->
+                    <div class="tab-pane fade" id="local-pane" role="tabpanel">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6">
+                                <span class="text-warning fw-bold text-uppercase d-block mb-2">Hands-Free Near Me</span>
+                                <h3 class="display-6 fw-bold mb-4">Local Coordinates & Assistant Routing</h3>
+                                <p class="text-muted mb-4">When a driver asks "Hey Siri, find the nearest emergency clinic," the assistant checks coordinates, local index links, and local business reviews. I build secure local coordinate nodes so voice assistants direct users directly to your physical address.</p>
+                                <div class="p-4 bg-body bg-opacity-50 rounded-4 border border-warning border-dashed">
+                                    <h5 class="fw-bold text-warning mb-2"><i class="bi bi-shield-check me-2"></i> Local Coordinates Deliverables</h5>
+                                    <p class="small text-muted mb-0">Coordinate calibration across Apple Maps, Google Maps, Bing Directories, and Yelp platforms to ensure consistent geographic tags.</p>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&q=80&w=800" alt="Local Search Maps" class="img-fluid rounded-4 shadow border">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Booking Form Section -->
+        <section class="py-5 bg-body-tertiary">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5">
+                        <h2 class="display-5 fw-bold mb-4">Book This Service</h2>
+                        <p class="lead text-muted mb-4">Ready to implement speakable schemas and dominate Siri/Alexa? Send a booking message and I will reach out within 24 hours.</p>
+                        <div class="p-4 bg-primary text-white rounded-4 shadow-sm">
+                            <h5 class="fw-bold mb-2"><i class="bi bi-clock me-2"></i> Quick Consultation</h5>
+                            <p class="small mb-0 opacity-75">All bookings include an initial 30-minute discovery call with a computational schema engineer.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="custom-card shadow-lg p-5">
+                            <h3 class="fw-bold mb-4 text-center">Service Inquiry</h3>
                             <form>
-                                <div class="mb-3">
-                                    <label class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" required>
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold">First Name</label>
+                                        <input type="text" class="form-control" placeholder="John" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold">Last Name</label>
+                                        <input type="text" class="form-control" placeholder="Doe" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-semibold">Email Address</label>
+                                        <input type="email" class="form-control" placeholder="john@company.com" required>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-semibold">Select Optimization Service</label>
+                                        <select class="form-select">
+                                            <option selected>Speakable Schema Implementation</option>
+                                            <option>Conversational NLP Phrasing</option>
+                                            <option>Local Coordinates & Directories</option>
+                                            <option>Full-Suite Voice Audit</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-semibold">Project Scope Details</label>
+                                        <textarea class="form-control" rows="4" placeholder="Tell me about your website nodes..." required></textarea>
+                                    </div>
+                                    <div class="col-12 pt-3">
+                                        <button type="submit" class="btn btn-primary w-100 btn-lg py-3 fw-bold">Submit Booking Request</button>
+                                    </div>
                                 </div>
-                                <div class="mb-3">
-                                    <label class="form-label">Website URL</label>
-                                    <input type="url" class="form-control" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary w-100">Send Request</button>
                             </form>
-                            <hr>
-                            <h5>Need Help?</h5>
-                            <p class="small text-muted">Call us at +1 234 567 890</p>
                         </div>
                     </div>
                 </div>
@@ -168,7 +277,7 @@
                         <i class="bi bi-mic-fill me-2"></i>
                         <span>VoiceSEO<span class="text-secondary">Pro</span></span>
                     </a>
-                    <p class="text-muted pe-lg-5">Empowering businesses to be heard in the age of conversational search and AI assistants.</p>
+                    <p class="text-muted pe-lg-5">Empowering businesses to be heard clearly in the age of conversational search and AI assistants.</p>
                     <div class="d-flex gap-2 mt-4">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
@@ -178,7 +287,7 @@
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-4">Company</h5>
-                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="about.html" class="footer-link">About Me</a>
                     <a href="services.html" class="footer-link">Services</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                     <a href="contact.html" class="footer-link">Contact</a>
@@ -192,7 +301,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p class="text-muted mb-4">Stay ahead of voice search trends.</p>
+                    <p class="text-muted mb-4">Stay ahead of voice search trends with monthly strategies.</p>
                     <form class="input-group">
                         <input type="email" class="form-control" placeholder="Email address" required>
                         <button class="btn btn-primary" type="submit">Join</button>
@@ -205,14 +314,20 @@
                     <p class="mb-0 text-muted">&copy; 2026 VoiceSEO Pro. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-muted">Designed for SEO Professionals</p>
+                    <p class="mb-0 text-muted">Designed for Conversational SEO Experts</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <button class="btn btn-primary rounded-circle shadow" id="back-to-top"><i class="bi bi-arrow-up"></i></button>
+    <!-- Back to Top -->
+    <button class="btn btn-primary rounded-circle shadow" id="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>

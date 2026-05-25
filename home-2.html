@@ -3,39 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI & Voice Search Specialist | VoiceSEO Pro</title>
+    <title>AI & Generative Search SEO | VoiceSEO Pro</title>
+    <meta name="description" content="Dominate AI answer engines like ChatGPT, Gemini, and Claude. Precision Generative Engine Optimization (GEO) services by VoiceSEO Pro.">
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Header -->
-    <header class="navbar navbar-expand-lg sticky-top bg-body">
+    <header class="navbar navbar-expand-xl sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <i class="bi bi-mic-fill me-2"></i>
                 <span>VoiceSEO<span class="text-secondary">Pro</span></span>
             </a>
             
-            <div class="d-flex align-items-center order-lg-3">
-                <button class="icon-btn me-2 d-none d-lg-inline-flex theme-toggle">
-                    <i class="bi bi-moon-stars"></i>
+            <div class="d-flex align-items-center order-xl-3">
+                <button class="icon-btn me-2 d-none d-xl-inline-flex theme-toggle">
+                    <i class="bi bi-moon-stars-fill"></i>
                 </button>
-                <button class="icon-btn me-2 d-none d-lg-inline-flex rtl-toggle">
+                <button class="icon-btn me-2 d-none d-xl-inline-flex rtl-toggle">
                     RTL
                 </button>
-                <a href="login.html" class="btn btn-primary d-none d-lg-inline-block me-2">Login</a>
-                <a href="register.html" class="btn btn-secondary d-none d-lg-inline-block">Sign Up</a>
+                <a href="login.html" class="btn btn-primary d-none d-xl-inline-block me-2">Login</a>
+                <a href="register.html" class="btn btn-secondary d-none d-xl-inline-block">Sign Up</a>
+                
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary">VoiceSEO Pro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -48,10 +54,10 @@
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="d-lg-none mt-4">
+                    <div class="d-xl-none mt-4 border-top pt-4">
                         <div class="d-flex justify-content-center gap-3 mb-4">
                             <button class="icon-btn theme-toggle">
-                                <i class="bi bi-moon-stars"></i>
+                                <i class="bi bi-moon-stars-fill"></i>
                             </button>
                             <button class="icon-btn rtl-toggle">
                                 RTL
@@ -66,193 +72,319 @@
     </header>
 
     <main>
-        <!-- Hero Section Alternative -->
-        <section class="hero-section-alt">
+        <!-- Hero Section -->
+        <section class="hero-section-alt d-flex align-items-center">
             <div class="container">
-                <div class="row justify-content-center text-center">
-                    <div class="col-lg-8 animate-up">
-                        <h1 class="display-1 fw-bold mb-4">Future-Proof Your <span class="text-secondary">Visibility</span></h1>
-                        <p class="lead mb-5 opacity-90">Optimize for ChatGPT, Gemini, and Claude search behaviors. I am your specialized AI Search & Voice optimization partner.</p>
-                        <form class="bg-white-10 p-3 rounded-4 shadow-lg d-flex gap-2 mx-auto" style="max-width: 600px; backdrop-filter: blur(10px); background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);">
-                            <input type="url" class="form-control border-0 bg-transparent text-white" placeholder="Enter your website URL">
-                            <button class="btn btn-secondary px-4">Analyze Free</button>
-                        </form>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-10 col-xl-8 mx-auto text-center animate-up">
+                        <span class="badge mb-3 p-2 px-3"><i class="bi bi-robot me-2 text-secondary"></i>Generative Engine Optimization (GEO)</span>
+                        <h1 class="display-3 fw-bold mb-4">Optimized for <br><span class="text-gradient">AI Search Engines</span></h1>
+                        <p class="lead mb-5 mx-auto opacity-90" style="font-size: 1.2rem;">Siri and Alexa now fetch answers directly from LLM neural systems. I audit your digital footprint to ensure ChatGPT, Gemini, and Claude cite your brand first.</p>
+                        
+                        <!-- Interactive Live AI Audit Field -->
+                        <div class="custom-card p-4 shadow-lg border border-primary border-2">
+                            <h5 class="fw-bold mb-3"><i class="bi bi-shield-check text-primary me-2"></i>Live AI Visibility Checker</h5>
+                            <form id="ai-checker-form" class="row g-2">
+                                <div class="col-sm-6">
+                                    <input type="url" class="form-control" placeholder="Enter website url (e.g. techflow.com)" required id="checker-url">
+                                </div>
+                                <div class="col-sm-4">
+                                    <select class="form-select" id="checker-engine">
+                                        <option value="chatgpt">ChatGPT Search</option>
+                                        <option value="gemini">Google Gemini</option>
+                                        <option value="siri">Siri (Apple Intel)</option>
+                                        <option value="copilot">Microsoft Copilot</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2">
+                                    <button class="btn btn-primary w-100 p-3" type="submit"><i class="bi bi-lightning-charge"></i></button>
+                                </div>
+                            </form>
+                            <!-- Hidden Simulated Result Pane -->
+                            <div id="checker-results" class="mt-4 p-3 bg-body bg-opacity-75 border rounded-3 d-none animate-up">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <span class="small fw-bold">LLM Citation Score:</span>
+                                    <span class="badge bg-success" id="result-score">84% Excellent</span>
+                                </div>
+                                <p class="small text-muted mb-0" id="result-text">Audit Successful! Brand references parsed across LLM context window arrays. Standard local business coordinates verified.</p>
+                            </div>
+                        </div>
                     </div>
+                </div>
                 </div>
             </div>
         </section>
 
-        <!-- Dynamic Section: AI Platforms -->
-        <section class="py-5 bg-dark text-white">
+        <!-- Dynamic Content: Advanced GEO Parameters -->
+        <section class="py-5" id="geo-features">
             <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2>We Optimize for Every Assistant</h2>
+                <div class="text-center mb-5 max-w-700 mx-auto">
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2">Technical Core</span>
+                    <h2 class="display-5 fw-bold">The Pillars of Generative SEO</h2>
+                    <p class="lead">Unlike standard keyword matching, Answer Engines run vector embeddings to query knowledge databases. Here is how I align your footprint:</p>
                 </div>
-                <div class="row g-4 text-center">
-                    <div class="col-6 col-md-3">
-                        <i class="bi bi-apple display-3 mb-3"></i>
-                        <h5>Siri</h5>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <img src="https://www.gstatic.com/images/branding/product/2x/googleg_96dp.png" alt="Google" class="mb-3 d-block mx-auto" style="width: 60px; height: 60px; object-fit: contain;">
-                        <h5>Google</h5>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <i class="bi bi-amazon display-3 mb-3"></i>
-                        <h5>Alexa</h5>
-                    </div>
-                    <div class="col-6 col-md-3">
-                        <i class="bi bi-microsoft display-3 mb-3"></i>
-                        <h5>Cortana</h5>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Feature Grid -->
-        <section class="py-5">
-            <div class="container py-5">
                 <div class="row g-4">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="custom-card border-top border-5 border-primary">
-                            <img src="https://img.icons8.com/color/96/brain--v1.png" alt="Semantic" class="card-img-custom mb-3">
-                            <h4>Semantic Search</h4>
-                            <p>Understand the intent behind queries, not just the keywords.</p>
+                    <div class="col-lg-4">
+                        <div class="custom-card h-100">
+                            <img src="assets/img/rag_architecture.png" alt="RAG Architecture Alignment" class="card-img-custom mb-4" style="height: 100px; width: 100px; object-fit: cover;">
+                            <h4 class="fw-bold">RAG Architecture Alignment</h4>
+                            <p class="text-muted">Retrieval-Augmented Generation (RAG) fetches real-time web databases to prompt LLMs. I inject highly structured data points (JSON-LD Speakable codes) so RAG agents fetch you instantly.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="custom-card border-top border-5 border-secondary">
-                            <img src="https://www.gstatic.com/images/branding/product/2x/googleg_96dp.png" alt="Google SGE" class="card-img-custom mb-3" style="width: 48px; height: 48px; object-fit: contain;">
-                            <h4>Answer Engine Optimization</h4>
-                            <p>Rank in the generative AI results of Bing and Google SGE.</p>
+                    <div class="col-lg-4">
+                        <div class="custom-card h-100">
+                            <img src="assets/img/instant_answers.png" alt="Sentiment & Credibility Tuning" class="card-img-custom mb-4" style="height: 100px; width: 100px; object-fit: cover;">
+                            <h4 class="fw-bold">Sentiment & Credibility Tuning</h4>
+                            <p class="text-muted">LLMs filters target safe, peer-verified recommendations. I index client reviews and credentials across high-authority networks to ensure positive association weights.</p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4">
-                        <div class="custom-card border-top border-5 border-tertiary">
-                            <img src="https://img.icons8.com/color/96/audio-wave--v1.png" alt="Audit" class="card-img-custom mb-3">
-                            <h4>Conversational Audits</h4>
-                            <p>Detailed analysis of how your site performs in spoken queries.</p>
+                    <div class="col-lg-4">
+                        <div class="custom-card h-100">
+                            <img src="assets/img/nlp_synergy.png" alt="Synonym & Context Expansion" class="card-img-custom mb-4" style="height: 100px; width: 100px; object-fit: cover;">
+                            <h4 class="fw-bold">Synonym & Context Expansion</h4>
+                            <p class="text-muted">Voice intents rely on contextual phrasing. I design conversational FAQ nodes that naturally overlap with multiple variations of spoken user queries.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- New Section: Generative AI Visibility -->
+        <!-- Simulated Voice Analytics Dashboard Promotion Section -->
         <section class="py-5 bg-body-tertiary">
             <div class="container py-5">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" alt="Generative AI" class="img-fluid rounded-4 shadow-lg">
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="display-5 fw-bold mb-4">Master the Era of <span class="text-secondary">Generative Search</span></h2>
-                        <p class="lead text-muted mb-4">Search is changing. With the rise of LLMs like ChatGPT and Google Gemini, your brand needs to be part of the generated response. I specialize in making your content "Generative AI Ready."</p>
-                        <div class="d-flex gap-4 mb-4">
-                            <div class="custom-card text-center p-3 flex-fill animate-up">
-                                <h3 class="text-secondary mb-1">92%</h3>
-                                <small class="text-muted fw-bold">Citation Rate</small>
+                        <div class="custom-card bg-dark text-white p-4 shadow-lg border-secondary border border-2">
+                            <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom border-secondary">
+                                <h5 class="mb-0 fw-bold"><i class="bi bi-graph-up-arrow text-secondary me-2"></i> Voice Analytics Pro</h5>
+                                <span class="badge bg-secondary">Realtime View</span>
                             </div>
-                            <div class="custom-card text-center p-3 flex-fill animate-up" style="animation-delay: 0.1s;">
-                                <h3 class="text-primary mb-1">4.5x</h3>
-                                <small class="text-muted fw-bold">Traffic Growth</small>
+                            <div class="row g-3 mb-4">
+                                <div class="col-6">
+                                    <div class="p-3 bg-body bg-opacity-10 rounded">
+                                        <div class="small text-muted mb-1">Verbal Impressions</div>
+                                        <h3 class="fw-bold text-secondary mb-0">14,250</h3>
+                                        <small class="text-success"><i class="bi bi-arrow-up-short"></i> +28.4%</small>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="p-3 bg-body bg-opacity-10 rounded">
+                                        <div class="small text-muted mb-1">Featured Snippet Share</div>
+                                        <h3 class="fw-bold text-primary mb-0">68.2%</h3>
+                                        <small class="text-success"><i class="bi bi-arrow-up-short"></i> +12.3%</small>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="p-3 bg-body bg-opacity-10 rounded mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <small class="fw-medium">Alexa Intent Accuracy</small>
+                                    <small class="text-success">98.4%</small>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-success" style="width: 98.4%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="p-3 bg-body bg-opacity-10 rounded">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <small class="fw-medium">Siri Response Speed</small>
+                                    <small class="text-primary">0.65s</small>
+                                </div>
+                                <div class="progress" style="height: 6px;">
+                                    <div class="progress-bar bg-primary" style="width: 92%"></div>
+                                </div>
                             </div>
                         </div>
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-2"><i class="bi bi-patch-check-fill text-secondary me-2"></i> LLM Training Data Optimization</li>
-                            <li class="mb-2"><i class="bi bi-patch-check-fill text-secondary me-2"></i> Citation-Driven Content Strategy</li>
-                            <li><i class="bi bi-patch-check-fill text-secondary me-2"></i> Generative Engine Optimization (GEO)</li>
-                        </ul>
+                    </div>
+                    <div class="col-lg-6 animate-up">
+                        <span class="text-primary fw-bold text-uppercase d-block mb-2">Interactive Dashboard</span>
+                        <h2 class="display-5 fw-bold mb-4">Monitor Your Voice & AI Citations in Real-Time</h2>
+                        <p class="lead text-muted mb-4">Every project gets direct access to my custom analytics tracker. Monitor smart speaker impressions, LLM query mentions, local click routing, and speakable schema hits on one clean dashboard.</p>
+                        
+                        <div class="d-flex gap-3 flex-wrap">
+                            <a href="login.html" class="btn btn-primary">Try Free Dashboard</a>
+                            <a href="contact.html" class="btn btn-outline-primary">Schedule Live Demo</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- New Section: Voice Analytics Dashboard -->
-        <section class="py-5">
+        <!-- New Section 1: The Future of Search (Interactive Split) -->
+        <section class="py-5 overflow-hidden" style="background: linear-gradient(to right, var(--bg-dark), #0f172a);">
             <div class="container py-5">
-                <div class="row align-items-center flex-row-reverse g-5">
-                    <div class="col-lg-6">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Analytics Dashboard" class="img-fluid rounded-4 shadow-lg">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-6 order-lg-2 animate-up">
+                        <span class="badge bg-primary-subtle text-primary mb-3 p-2 px-3">The Paradigm Shift</span>
+                        <h2 class="display-5 fw-bold text-white mb-4">Search is No Longer Ten Blue Links. <br><span class="text-gradient">It's a Direct Conversation.</span></h2>
+                        <p class="lead text-white-50 mb-4">Language models like GPT-4 and Gemini don't rank websites; they synthesize knowledge. If your content isn't structured as a definitive, authoritative answer, you won't even be part of the conversation.</p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex align-items-center gap-3 mb-3 text-white">
+                                <i class="bi bi-cpu text-primary fs-4"></i>
+                                <span><strong>Entity Linking over Keywords:</strong> I map your brand to core industry concepts.</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3 mb-3 text-white">
+                                <i class="bi bi-diagram-3 text-success fs-4"></i>
+                                <span><strong>Semantic Density:</strong> Content structured for deep learning ingestion.</span>
+                            </li>
+                        </ul>
+                        <a href="services.html" class="btn btn-primary btn-lg mt-2">View GEO Architecture</a>
                     </div>
-                    <div class="col-lg-6">
-                        <h2 class="display-5 fw-bold mb-4">Real-Time <span class="text-primary">Voice Performance</span> Tracking</h2>
-                        <p class="lead text-muted mb-4">Stop guessing. My advanced analytics dashboard gives you a crystal-clear view of how your brand ranks in voice search across all major platforms and devices.</p>
-                        <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-start">
-                                    <div class="bg-primary-subtle p-3 rounded-3 me-3">
-                                        <i class="bi bi-graph-up-arrow text-primary h4 mb-0"></i>
-                                    </div>
-                                    <div>
-                                        <h5>Rank Tracking</h5>
-                                        <p class="text-muted small">Daily updates on your "Position Zero" status.</p>
-                                    </div>
-                                </div>
+                    <div class="col-lg-6 order-lg-1 position-relative">
+                        <div class="floating-img-container" style="animation: float-soft 6s ease-in-out infinite;">
+                            <img src="assets/img/ai_neural_network_search.png" alt="AI Neural Network Processing" class="img-fluid rounded-4 shadow-lg border border-primary border-opacity-25 custom-img-hover" style="max-height: 500px; object-fit: cover; width: 100%;">
+                            <div class="position-absolute top-0 end-0 m-4 p-3 glassmorphism-card rounded-3 text-white text-center">
+                                <i class="bi bi-lightning-charge-fill text-warning fs-3 mb-1"></i>
+                                <div class="fw-bold fs-5">0.4s</div>
+                                <div class="small opacity-75">Response Latency</div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="d-flex align-items-start">
-                                    <div class="bg-secondary-subtle p-3 rounded-3 me-3">
-                                        <i class="bi bi-megaphone text-secondary h4 mb-0"></i>
-                                    </div>
-                                    <div>
-                                        <h5>Share of Voice</h5>
-                                        <p class="text-muted small">Measure your dominance against competitors.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-5">
-                            <a href="register.html" class="btn btn-primary btn-lg">Get Started Now</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- New Section: Conversational Commerce -->
-        <section class="py-5 bg-dark text-white overflow-hidden">
+
+        <!-- New Section 2: AI Engine Domination (Bento Grid) -->
+        <section class="py-5 bg-body-tertiary">
             <div class="container py-5">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6 animate-up">
-                        <span class="text-secondary fw-bold text-uppercase mb-2 d-block">The Future of Sales</span>
-                        <h2 class="display-5 fw-bold mb-4">Conversational Commerce: From Voice to Cart</h2>
-                        <p class="lead opacity-75 mb-5">Voice search is rapidly evolving into a direct sales channel. I help e-commerce brands optimize their checkout flows and product descriptions for voice-activated shopping.</p>
-                        
-                        <div class="row g-4">
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="bg-secondary p-2 rounded-2 me-3">
-                                        <i class="bi bi-cart-check h4 mb-0"></i>
-                                    </div>
-                                    <h5 class="mb-0 text-white">Voice Checkout</h5>
-                                </div>
-                                <p class="small opacity-75">Seamless transaction flows for Alexa and Google Assistant.</p>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="d-flex align-items-center mb-3">
-                                    <div class="bg-primary p-2 rounded-2 me-3">
-                                        <i class="bi bi-wallet2 h4 mb-0"></i>
-                                    </div>
-                                    <h5 class="mb-0 text-white">Increased ROI</h5>
-                                </div>
-                                <p class="small opacity-75">Higher conversion rates from high-intent voice queries.</p>
-                            </div>
-                        </div>
+                <div class="text-center mb-5 max-w-700 mx-auto animate-up">
+                    <span class="text-secondary fw-bold text-uppercase d-block mb-2">Engine Specific Domination</span>
+                    <h2 class="display-5 fw-bold">Optimizing for the Big Three</h2>
+                    <p class="lead">Each LLM has a unique retrieval architecture. I apply specialized embeddings to ensure visibility across all major AI search interfaces.</p>
+                </div>
+                
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-5 animate-up" style="animation-delay: 0.2s;">
+                        <img src="assets/img/multi_llm_domination.png" alt="Multi LLM Optimization" class="img-fluid rounded-4 shadow-lg custom-img-hover w-100" style="object-fit:cover; height:450px;">
                     </div>
-                    <div class="col-lg-6">
-                        <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?auto=format&fit=crop&q=80&w=800" alt="Conversational Commerce" class="img-fluid rounded-4 shadow-lg">
-                            <div class="position-absolute top-50 start-50 translate-middle">
-                                <div class="bg-white text-dark p-4 rounded-circle shadow-lg d-flex align-items-center justify-content-center" style="width: 120px; height: 120px; border: 5px solid var(--secondary-color);">
-                                    <div class="text-center">
-                                        <h4 class="mb-0 fw-bold">+40%</h4>
-                                        <small class="fw-bold text-muted">Sales</small>
-                                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-4">
+                            <div class="col-md-6 animate-up" style="animation-delay: 0.3s;">
+                                <div class="custom-card h-100 bento-hover border-top border-4 border-success">
+                                    <h4 class="fw-bold d-flex align-items-center gap-2"><i class="bi bi-google text-success"></i> Gemini (SGE)</h4>
+                                    <p class="text-muted small mt-2">Focused on local graph integration and real-time freshness. I prioritize high E-E-A-T signals and structured local citations.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 animate-up" style="animation-delay: 0.4s;">
+                                <div class="custom-card h-100 bento-hover border-top border-4" style="border-color: #10a37f !important;">
+                                    <h4 class="fw-bold d-flex align-items-center gap-2"><i class="bi bi-chat-square-text" style="color: #10a37f;"></i> ChatGPT Search</h4>
+                                    <p class="text-muted small mt-2">Prioritizes deeply sourced, authoritative long-form content. I align your knowledge base for direct conversational extraction.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-12 animate-up" style="animation-delay: 0.5s;">
+                                <div class="custom-card bento-hover border-start border-4 border-primary">
+                                    <h4 class="fw-bold d-flex align-items-center gap-2"><i class="bi bi-robot text-primary"></i> Claude & Anthropic Ecosystems</h4>
+                                    <p class="text-muted small mt-2">Favors extreme nuance and factual accuracy without fluff. I strip away marketing jargon to present yMy Services as high-value, factual data nodes.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- New Section 3: The Voice Query Lifecycle (Timeline) -->
+        <section class="py-5 position-relative overflow-hidden" style="background-color: var(--bg-light);">
+            <div class="container py-5 position-relative z-1">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 animate-up">
+                        <span class="text-primary fw-bold text-uppercase d-block mb-2">The Architecture of a Query</span>
+                        <h2 class="display-5 fw-bold mb-4">From Soundwave to <span class="text-gradient">Structured Data</span></h2>
+                        <p class="lead mb-4">Understanding the journey of a voice query is critical to intercepting it. I optimize every touchpoint.</p>
+                        
+                        <div class="lifecycle-timeline">
+                            <div class="timeline-step d-flex gap-3 mb-4">
+                                <div class="step-icon bg-primary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;"><i class="bi bi-mic"></i></div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">1. The Spoken Prompt</h5>
+                                    <p class="text-muted small">User asks a complex, conversational question.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step d-flex gap-3 mb-4">
+                                <div class="step-icon bg-secondary text-white rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;"><i class="bi bi-cpu"></i></div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">2. NLP Translation</h5>
+                                    <p class="text-muted small">The device converts audio to intent vectors.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step d-flex gap-3">
+                                <div class="step-icon bg-warning text-dark rounded-circle d-flex align-items-center justify-content-center flex-shrink-0" style="width:40px;height:40px;"><i class="bi bi-check-circle-fill"></i></div>
+                                <div>
+                                    <h5 class="fw-bold mb-1">3. The Position Zero Retrieval</h5>
+                                    <p class="text-muted small">The AI pulls your perfectly structured Speakable schema as the definitive answer.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 position-relative">
+                        <div class="pulse-ring-wrapper position-absolute top-50 start-50 translate-middle" style="z-index: -1;">
+                            <div class="pulse-ring"></div>
+                            <div class="pulse-ring animation-delay-1"></div>
+                        </div>
+                        <img src="assets/img/voice_query_lifecycle.png" alt="Voice Query to Data" class="img-fluid rounded-circle shadow-lg custom-img-hover border border-4 border-white" style="width: 100%; max-width: 500px; height: 500px; object-fit: cover; display: block; margin: 0 auto; position:relative; z-index: 2;">
+                    </div>
+                </div>
+            </div>
+            
+            <style>
+                @keyframes float-soft {
+                    0% { transform: translateY(0px); }
+                    50% { transform: translateY(-15px); }
+                    100% { transform: translateY(0px); }
+                }
+                .bento-hover {
+                    transition: all 0.4s ease;
+                }
+                .bento-hover:hover {
+                    transform: scale(1.03);
+                    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+                }
+                .lifecycle-timeline .timeline-step {
+                    position: relative;
+                }
+                .lifecycle-timeline .timeline-step:not(:last-child)::after {
+                    content: '';
+                    position: absolute;
+                    left: 20px;
+                    top: 40px;
+                    bottom: -15px;
+                    width: 2px;
+                    background: linear-gradient(to bottom, var(--primary-color), transparent);
+                    z-index: 0;
+                }
+                .pulse-ring-wrapper {
+                    width: 500px;
+                    height: 500px;
+                }
+                .pulse-ring {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 100%;
+                    height: 100%;
+                    border-radius: 50%;
+                    border: 2px solid var(--secondary-color);
+                    animation: pulse-out 3s infinite ease-out;
+                    opacity: 0;
+                }
+                .pulse-ring.animation-delay-1 {
+                    animation-delay: 1.5s;
+                }
+                @keyframes pulse-out {
+                    0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0.8; }
+                    100% { transform: translate(-50%, -50%) scale(1.3); opacity: 0; }
+                }
+            </style>
+        </section>
+
+        <!-- Custom CTA Section -->
+        <section class="py-5 bg-secondary text-white">
+            <div class="container py-5 text-center">
+                <h2 class="display-4 fw-bold mb-3">Ready to Claim "Position Zero"?</h2>
+                <p class="lead mb-5 opacity-90 mx-auto" style="max-width: 700px;">Stop losing high-intent conversational buyers. Get a complimentary Voice Search and Generative AI audit today.</p>
+                <a href="contact.html" class="btn btn-light btn-lg px-5">Get Your Audit Report</a>
             </div>
         </section>
     </main>
@@ -266,7 +398,7 @@
                         <i class="bi bi-mic-fill me-2"></i>
                         <span>VoiceSEO<span class="text-secondary">Pro</span></span>
                     </a>
-                    <p class="text-muted pe-lg-5">Empowering businesses to be heard in the age of conversational search and AI assistants.</p>
+                    <p class="text-muted pe-lg-5">Empowering businesses to be heard clearly in the age of conversational search and AI assistants.</p>
                     <div class="d-flex gap-2 mt-4">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
@@ -276,7 +408,7 @@
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-4">Company</h5>
-                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="about.html" class="footer-link">About Me</a>
                     <a href="services.html" class="footer-link">Services</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                     <a href="contact.html" class="footer-link">Contact</a>
@@ -290,7 +422,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p class="text-muted mb-4">Stay ahead of voice search trends.</p>
+                    <p class="text-muted mb-4">Stay ahead of voice search trends with monthly strategies.</p>
                     <form class="input-group">
                         <input type="email" class="form-control" placeholder="Email address" required>
                         <button class="btn btn-primary" type="submit">Join</button>
@@ -303,14 +435,60 @@
                     <p class="mb-0 text-muted">&copy; 2026 VoiceSEO Pro. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-muted">Designed for SEO Professionals</p>
+                    <p class="mb-0 text-muted">Designed for Conversational SEO Experts</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <button class="btn btn-primary rounded-circle shadow" id="back-to-top"><i class="bi bi-arrow-up"></i></button>
+    <!-- Back to Top -->
+    <button class="btn btn-primary rounded-circle shadow" id="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+    <script>
+        // Custom interactive simulator script for home-2.html
+        document.getElementById('ai-checker-form')?.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const results = document.getElementById('checker-results');
+            const score = document.getElementById('result-score');
+            const text = document.getElementById('result-text');
+            const urlInput = document.getElementById('checker-url').value;
+            const engine = document.getElementById('checker-engine').value;
+            
+            results.classList.add('d-none');
+            
+            setTimeout(() => {
+                results.classList.remove('d-none');
+                
+                // Deterministic high-fidelity outcomes based on URL length to make it look realistic
+                const scoreValue = Math.floor(45 + (urlInput.length % 5) * 10);
+                let labelClass = 'bg-danger';
+                let labelText = 'Urgent Audit Needed';
+                
+                if (scoreValue >= 80) {
+                    labelClass = 'bg-success';
+                    labelText = 'Optimal Coverage';
+                } else if (scoreValue >= 60) {
+                    labelClass = 'bg-warning text-dark';
+                    labelText = 'Moderate Visibility';
+                }
+                
+                score.className = `badge ${labelClass}`;
+                score.innerHTML = `${scoreValue}% - ${labelText}`;
+                
+                let engineLabel = 'ChatGPT';
+                if (engine === 'gemini') engineLabel = 'Gemini';
+                if (engine === 'siri') engineLabel = 'Apple Siri';
+                if (engine === 'copilot') engineLabel = 'Microsoft Copilot';
+                
+                text.innerHTML = `<strong>Audit Target:</strong> ${urlInput}<br><strong>Engine:</strong> ${engineLabel}<br><strong>Result Details:</strong> Found Speakable markers missing in 73% of key nodes. Local schema coordinate lookup succeeded, but voice-first FAQ snippets require semantic intent tuning.`;
+            }, 1000);
+        });
+    </script>
 </body>
 </html>

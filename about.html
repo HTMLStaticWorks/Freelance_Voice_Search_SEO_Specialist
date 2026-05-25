@@ -1,58 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us | VoiceSEO Pro</title>
+    <title>About Me | VoiceSEO Pro</title>
+    <meta name="description" content="Meet the pioneers behind VoiceSEO Pro. Pioneering conversational search and generative engine optimization since 2016.">
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
 
     <!-- Header -->
-    <header class="navbar navbar-expand-lg sticky-top bg-body">
+    <header class="navbar navbar-expand-xl sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <i class="bi bi-mic-fill me-2"></i>
                 <span>VoiceSEO<span class="text-secondary">Pro</span></span>
             </a>
-
-            <div class="d-flex align-items-center order-lg-3">
-                <button class="btn theme-toggle me-2 d-none d-lg-inline-flex theme-toggle"><i class="bi bi-moon-stars"></i></button>
-                <button class="btn btn-sm btn-outline-primary me-2 d-none d-sm-inline-block"
-                    id="rtl-toggle">RTL</button>
-                <a href="login.html" class="btn btn-primary d-none d-lg-inline-block me-2">Login</a>
-                <a href="register.html" class="btn btn-secondary d-none d-lg-inline-block">Sign Up</a>
-                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasNavbar">
+            
+            <div class="d-flex align-items-center order-xl-3">
+                <button class="icon-btn me-2 d-none d-xl-inline-flex theme-toggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </button>
+                <button class="icon-btn me-2 d-none d-xl-inline-flex rtl-toggle">
+                    RTL
+                </button>
+                <a href="login.html" class="btn btn-primary d-none d-xl-inline-block me-2">Login</a>
+                <a href="register.html" class="btn btn-secondary d-none d-xl-inline-block">Sign Up</a>
+                
+                <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary">VoiceSEO Pro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home 1</a></li>
                         <li class="nav-item"><a class="nav-link" href="home-2.html">Home 2</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                        <li class="nav-item active"><a class="nav-link active" href="about.html">About</a></li>
                         <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="d-lg-none mt-4">
+                    <div class="d-xl-none mt-4 border-top pt-4">
                         <div class="d-flex justify-content-center gap-3 mb-4">
                             <button class="icon-btn theme-toggle">
-                                <i class="bi bi-moon-stars"></i>
+                                <i class="bi bi-moon-stars-fill"></i>
                             </button>
                             <button class="icon-btn rtl-toggle">
                                 RTL
@@ -70,162 +75,143 @@
         <!-- Page Header -->
         <section class="page-header text-center">
             <div class="container py-4">
-                <h1 class="display-1 fw-bold mb-4">Our Story</h1>
+                <h1 class="display-1 fw-bold mb-4">My Voice Journey</h1>
                 <p class="lead mx-auto opacity-90" style="max-width: 700px;">
-                    We are a team of dedicated search specialists who saw the voice revolution coming long before the first smart speaker hit the shelves. Today, we help brands transition from traditional text search to the conversational future of AI and voice interaction.
+                    I am a computational linguist, schema engineer, and technical marketer focused entirely on the conversational search landscape.
                 </p>
             </div>
         </section>
 
-        <!-- Mission Section -->
+        <!-- My Story & Mission Section -->
         <section class="py-5">
             <div class="container py-5">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
-                        <img src="https://img.freepik.com/free-vector/about-us-concept-illustration_114360-639.jpg"
-                            alt="About Us" class="img-fluid rounded-4">
-                    </div>
-                    <div class="col-lg-6">
-                        <h2 class="mb-4">Driving the Voice Revolution</h2>
-                        <p class="lead">Since 2016, we've been at the forefront of the shift from keyboard-first to
-                            voice-first search behavior.</p>
-                        <p class="text-muted">Our mission is to help small and medium businesses survive and thrive in a
-                            world where Alexa, Siri, and Google Assistant are the primary gateways to information. We
-                            don't just optimize for search engines; we optimize for human conversation.</p>
-                        <div class="row mt-4">
-                            <div class="col-sm-6 mb-3">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    <span>Conversational Experts</span>
+                        <span class="text-primary fw-bold text-uppercase d-block mb-2">Pioneering AI SEO</span>
+                        <h2 class="display-5 fw-bold mb-4">Helping Brands Speak Directly to Their Audience</h2>
+                        <p class="text-muted mb-4">I started my independent practice, VoiceSEO Pro, in 2016 as smart speakers began appearing globally. I recognized that standard keyboard search patterns would inevitably give way to hands-free, spoken user experiences and neural AI reasoning engines.</p>
+                        <p class="text-muted mb-4">My mission is to help companies transform their digital footprints into conversational audio reference models, making them the absolute answer returned on Siri, Alexa, Google SGE, and ChatGPT platforms.</p>
+                        
+                        <div class="row g-4 mt-2">
+                            <div class="col-sm-6">
+                                <div class="p-3 border-start border-primary border-4 bg-body bg-opacity-50">
+                                    <h5 class="fw-bold mb-1">Human NLP Optimized</h5>
+                                    <p class="small text-muted mb-0">Mapping physical user speech variables instead of keyword string arrays.</p>
                                 </div>
                             </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    <span>Data-Driven Results</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    <span>AI Integration</span>
-                                </div>
-                            </div>
-                            <div class="col-sm-6 mb-3">
-                                <div class="d-flex align-items-center">
-                                    <i class="bi bi-check-circle-fill text-primary me-2"></i>
-                                    <span>Global Reach</span>
+                            <div class="col-sm-6">
+                                <div class="p-3 border-start border-secondary border-4 bg-body bg-opacity-50">
+                                    <h5 class="fw-bold mb-1">Schema First Logic</h5>
+                                    <p class="small text-muted mb-0">Robust, valid JSON-LD schema packages that virtual bots index immediately.</p>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="My Professional Setup" class="img-fluid rounded-4 shadow-lg border">
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Core Values Section -->
-        <section class="py-5">
+        <!-- Timeline Chronology Section -->
+        <section class="py-5 bg-body-tertiary">
             <div class="container py-5">
-                <div class="text-center mb-5">
-                    <span class="text-primary fw-bold text-uppercase">Philosophy</span>
-                    <h2 class="display-5 fw-bold">Our Core Values</h2>
+                <div class="text-center mb-5 max-w-700 mx-auto">
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2">My Road Map</span>
+                    <h2 class="display-5 fw-bold">A Decade of Conversational Innovation</h2>
+                    <p class="text-muted">How I evolved from simple voice query research to pioneering Generative Engine Optimization.</p>
                 </div>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="p-4 h-100 rounded-4 border border-primary-subtle text-center">
-                            <div class="bg-primary-subtle p-3 rounded-circle d-inline-flex mb-4">
-                                <i class="bi bi-lightbulb text-primary h3 mb-0"></i>
-                            </div>
-                            <h4>Innovation First</h4>
-                            <p class="text-muted">We stay ahead of the curve, constantly adapting our strategies to the latest shifts in AI and voice technology.</p>
+                    <div class="col-md-3">
+                        <div class="custom-card h-100 p-4 border-top border-4 border-primary">
+                            <h5 class="fw-bold text-primary">2016 - Genesis</h5>
+                            <p class="small text-muted mb-0">Launched my freelance practice. Initial research on Amazon Echo Alexa and Google Home micro-intents. I pioneered early Featured Snippet capture guidelines.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="p-4 h-100 rounded-4 border border-secondary-subtle text-center">
-                            <div class="bg-secondary-subtle p-3 rounded-circle d-inline-flex mb-4">
-                                <i class="bi bi-shield-check text-secondary h3 mb-0"></i>
-                            </div>
-                            <h4>Radical Transparency</h4>
-                            <p class="text-muted">No black-box SEO. We provide clear, data-backed reports so you know exactly how your investment is performing.</p>
+                    <div class="col-md-3">
+                        <div class="custom-card h-100 p-4 border-top border-4 border-secondary">
+                            <h5 class="fw-bold text-secondary">2019 - Schema Breakthrough</h5>
+                            <p class="small text-muted mb-0">Google releases the Speakable Schema specification. I became one of the first independent consultants to configure dynamic speakable nodes for high-traffic sites.</p>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="p-4 h-100 rounded-4 border border-tertiary-subtle text-center">
-                            <div class="bg-tertiary-subtle p-3 rounded-circle d-inline-flex mb-4">
-                                <i class="bi bi-graph-up-arrow text-tertiary h3 mb-0"></i>
-                            </div>
-                            <h4>Results Driven</h4>
-                            <p class="text-muted">Our success is measured by your growth. We focus on metrics that matter: rankings, traffic, and conversions.</p>
+                    <div class="col-md-3">
+                        <div class="custom-card h-100 p-4 border-top border-4 border-warning">
+                            <h5 class="fw-bold text-warning">2023 - AI Engine Era</h5>
+                            <p class="small text-muted mb-0">LLMs hit mainstream markets. I expanded my proprietary stack to optimize digital assets for ChatGPT, Claude, and Gemini search networks.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="custom-card h-100 p-4 border-top border-4 border-info">
+                            <h5 class="fw-bold text-info">2026 - Global Authority</h5>
+                            <p class="small text-muted mb-0">Managing voice optimization pipelines for high-growth e-commerce, legal, and hospitality corporations internationally.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Our Journey (Timeline) -->
-        <section class="py-5 bg-dark text-white">
-            <div class="container py-5">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-5">
-                        <h2 class="display-5 fw-bold mb-4">Our Roadmap to <span class="text-secondary">Excellence</span></h2>
-                        <p class="lead opacity-75 mb-5">From a small freelance project to a globally recognized specialist agency, our journey has been defined by one thing: constant evolution.</p>
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600" alt="Journey" class="img-fluid rounded-4 shadow-lg">
-                    </div>
-                    <div class="col-lg-7">
-                        <div class="ps-lg-5">
-                            <div class="mb-5 position-relative ps-4 border-start border-secondary border-3">
-                                <div class="position-absolute top-0 start-0 translate-middle-x bg-secondary rounded-circle" style="width: 15px; height: 15px; margin-left: -2px;"></div>
-                                <h4 class="text-secondary">2016: The Beginning</h4>
-                                <p class="opacity-75">VoiceSEO Pro was founded as a niche SEO consultancy focused exclusively on local voice search for mobile users.</p>
-                            </div>
-                            <div class="mb-5 position-relative ps-4 border-start border-primary border-3">
-                                <div class="position-absolute top-0 start-0 translate-middle-x bg-primary rounded-circle" style="width: 15px; height: 15px; margin-left: -2px;"></div>
-                                <h4 class="text-primary">2019: NLP Integration</h4>
-                                <p class="opacity-75">We pioneered the use of Natural Language Processing (NLP) in content strategy, anticipating the "Conversational" shift.</p>
-                            </div>
-                            <div class="mb-5 position-relative ps-4 border-start border-warning border-3">
-                                <div class="position-absolute top-0 start-0 translate-middle-x bg-warning rounded-circle" style="width: 15px; height: 15px; margin-left: -2px;"></div>
-                                <h4 class="text-warning">2023: AI Search Mastery</h4>
-                                <p class="opacity-75">As ChatGPT and Gemini emerged, we pivoted to Answer Engine Optimization (AEO), becoming early experts in LLM citation strategies.</p>
-                            </div>
-                            <div class="position-relative ps-4 border-start border-info border-3">
-                                <div class="position-absolute top-0 start-0 translate-middle-x bg-info rounded-circle" style="width: 15px; height: 15px; margin-left: -2px;"></div>
-                                <h4 class="text-info">2026: Global Leadership</h4>
-                                <p class="opacity-75">Today, we manage voice and AI search presence for over 500+ brands across 15 countries.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Removed Team Specialists Section -->
 
-        <!-- Recognition & Certification -->
+        <!-- Dynamic Content: Conversational Methodology Walkthrough -->
         <section class="py-5 bg-body-tertiary">
             <div class="container py-5">
                 <div class="row align-items-center g-5">
-                    <div class="col-lg-6 order-lg-2">
-                        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80" alt="Certifications" class="img-fluid rounded-4 shadow-lg">
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=800" alt="Advanced Artificial Intelligence" class="img-fluid rounded-4 shadow-lg border">
                     </div>
-                    <div class="col-lg-6 order-lg-1">
-                        <h2 class="display-5 fw-bold mb-4">Certified Expertise</h2>
-                        <p class="lead text-muted mb-4">We don't just claim expertise; we validate it. Our strategies are built on official certifications from the industry's most influential platforms.</p>
-                        <div class="row g-3">
-                            <div class="col-6 col-sm-4">
-                                <div class="custom-card text-center p-4 h-100">
-                                    <img src="https://www.gstatic.com/images/branding/product/2x/googleg_96dp.png" alt="Google Search" class="rounded-circle mb-3 mx-auto shadow-sm" style="width: 60px; height: 60px; object-fit: contain; padding: 10px; background: white; border: 2px solid var(--primary-color);">
-                                    <small class="fw-bold d-block">Google Search</small>
+                    <div class="col-lg-6">
+                        <span class="text-primary fw-bold text-uppercase d-block mb-2">Rigorous Framework</span>
+                        <h2 class="display-5 fw-bold mb-4">My Technical Optimization Framework</h2>
+                        <p class="text-muted mb-4">I do not rely on generic suggestions or basic tools. I leverage a deeply technical process that aligns your codebase and content vectors directly with search engine LLMs:</p>
+                        
+                        <div class="accordion accordion-flush rounded-4 overflow-hidden" id="methodologyAccordion">
+                            <div class="accordion-item border-0 mb-3 rounded-4">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button rounded-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#phase1">
+                                        Phase 1: Conversational Auditing & Speech Profiling
+                                    </button>
+                                </h2>
+                                <div id="phase1" class="accordion-collapse collapse show" data-bs-parent="#methodologyAccordion">
+                                    <div class="accordion-body">
+                                        I analyze your current visibility for spoken queries, pinpoint latency bottlenecks, review schema inconsistencies, and evaluate search intent matches using native voice assistants.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-4">
-                                <div class="custom-card text-center p-4 h-100">
-                                    <img src="https://images.unsplash.com/photo-1552581234-26160f608093?auto=format&fit=crop&q=80&w=200" alt="HubSpot" class="rounded-circle mb-3 mx-auto shadow-sm" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--secondary-color);">
-                                    <small class="fw-bold d-block">HubSpot Content</small>
+                            <div class="accordion-item border-0 mb-3 rounded-4">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#phase2">
+                                        Phase 2: Structured speakable schema injection
+                                    </button>
+                                </h2>
+                                <div id="phase2" class="accordion-collapse collapse" data-bs-parent="#methodologyAccordion">
+                                    <div class="accordion-body">
+                                        I implement highly precise Schema.org/Speakable blocks. This indicates the exact portions of your pages that are designed for text-to-speech audio rendering.
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-6 col-sm-4">
-                                <div class="custom-card text-center p-4 h-100">
-                                    <img src="https://images.unsplash.com/photo-1675271591211-126ad94e495d?auto=format&fit=crop&w=200&q=80" alt="Bing" class="rounded-circle mb-3 mx-auto shadow-sm" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--tertiary-color);">
-                                    <small class="fw-bold d-block">Bing AEO</small>
+                            <div class="accordion-item border-0 mb-3 rounded-4">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#phase3">
+                                        Phase 3: NLP Content Restructuring & Q&A Networks
+                                    </button>
+                                </h2>
+                                <div id="phase3" class="accordion-collapse collapse" data-bs-parent="#methodologyAccordion">
+                                    <div class="accordion-body">
+                                        I restyle copy patterns into clear question-and-answer blocks, matching conversational search trends and natural speaker cadence to secure featured snippet ranks.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item border-0 mb-3 rounded-4">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed rounded-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#phase4">
+                                        Phase 4: GEO & Answer Engine Tracking
+                                    </button>
+                                </h2>
+                                <div id="phase4" class="accordion-collapse collapse" data-bs-parent="#methodologyAccordion">
+                                    <div class="accordion-body">
+                                        Using custom analytics systems, I monitor LLM mentions, Google Gemini/ChatGPT citation links, and smart speaker referrals, keeping your visibility ahead of updates.
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -233,69 +219,13 @@
                 </div>
             </div>
         </section>
-        <!-- Team / Specialist -->
-        <section class="py-5">
+
+        <!-- CTA Banner -->
+        <section class="py-5 bg-primary text-white text-center">
             <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2 class="display-5 fw-bold">Meet the Specialists</h2>
-                    <p class="text-muted">The minds behind the voice-first revolution.</p>
-                </div>
-                <div class="row g-4 justify-content-center text-center">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="custom-card shadow-lg p-5 h-100 d-flex flex-column">
-                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=400"
-                                alt="Sarah Jenkins" class="img-fluid rounded-circle mb-4 mx-auto border border-5 border-secondary-subtle p-1"
-                                style="width: 180px; height: 180px; object-fit: cover;">
-                            <h3 class="fw-bold">Sarah Jenkins</h3>
-                            <p class="text-secondary fw-bold text-uppercase small ls-wide">NLP & Content Lead</p>
-                            <hr class="w-25 mx-auto my-3">
-                            <div class="flex-grow-1">
-                                <p class="text-muted">Specializing in Natural Language Processing and conversational architecture for voice-first content strategies.</p>
-                            </div>
-                            <div class="d-flex justify-content-center gap-3 mt-4">
-                                <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
-                                <a href="#" class="social-btn"><i class="bi bi-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="custom-card shadow-lg p-5 h-100 d-flex flex-column">
-                            <img src="https://img.freepik.com/free-photo/handsome-young-businessman-suit-glasses_273609-14326.jpg"
-                                alt="John Doe" class="img-fluid rounded-circle mb-4 mx-auto border border-5 border-primary-subtle p-1"
-                                style="width: 180px; height: 180px; object-fit: cover;">
-                            <h3 class="fw-bold">John Doe</h3>
-                            <p class="text-primary fw-bold text-uppercase small ls-wide">Chief SEO Strategist</p>
-                            <hr class="w-25 mx-auto my-3">
-                            <div class="flex-grow-1">
-                                <p class="text-muted">10+ years in technical SEO and AI. John helps brands dominate "Position Zero" in voice and generative search results.</p>
-                            </div>
-                            <div class="d-flex justify-content-center gap-3 mt-4">
-                                <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
-                                <a href="#" class="social-btn"><i class="bi bi-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="custom-card shadow-lg p-5 h-100 d-flex flex-column">
-                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400"
-                                alt="Michael Chen" class="img-fluid rounded-circle mb-4 mx-auto border border-5 border-info-subtle p-1"
-                                style="width: 180px; height: 180px; object-fit: cover;">
-                            <h3 class="fw-bold">Michael Chen</h3>
-                            <p class="text-info fw-bold text-uppercase small ls-wide">AI Integration Lead</p>
-                            <hr class="w-25 mx-auto my-3">
-                            <div class="flex-grow-1">
-                                <p class="text-muted">Expert in LLM optimization and making brand content "Generative AI Ready" for ChatGPT and Google Gemini.</p>
-                            </div>
-                            <div class="d-flex justify-content-center gap-3 mt-4">
-                                <a href="#" class="social-btn"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
-                                <a href="#" class="social-btn"><i class="bi bi-globe"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h2 class="display-5 fw-bold mb-3">Speak Directly to Your Audience</h2>
+                <p class="lead opacity-80 mb-5 mx-auto" style="max-width: 600px;">Book a free conversational SEO consultation with me.</p>
+                <a href="contact.html" class="btn btn-light btn-lg px-5">Book Free Consult</a>
             </div>
         </section>
     </main>
@@ -309,7 +239,7 @@
                         <i class="bi bi-mic-fill me-2"></i>
                         <span>VoiceSEO<span class="text-secondary">Pro</span></span>
                     </a>
-                    <p class="text-muted pe-lg-5">Empowering businesses to be heard in the age of conversational search and AI assistants.</p>
+                    <p class="text-muted pe-lg-5">Empowering businesses to be heard clearly in the age of conversational search and AI assistants.</p>
                     <div class="d-flex gap-2 mt-4">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
@@ -319,7 +249,7 @@
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-4">Company</h5>
-                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="about.html" class="footer-link">About Me</a>
                     <a href="services.html" class="footer-link">Services</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                     <a href="contact.html" class="footer-link">Contact</a>
@@ -333,7 +263,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p class="text-muted mb-4">Stay ahead of voice search trends.</p>
+                    <p class="text-muted mb-4">Stay ahead of voice search trends with monthly strategies.</p>
                     <form class="input-group">
                         <input type="email" class="form-control" placeholder="Email address" required>
                         <button class="btn btn-primary" type="submit">Join</button>
@@ -346,15 +276,20 @@
                     <p class="mb-0 text-muted">&copy; 2026 VoiceSEO Pro. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-muted">Designed for SEO Professionals</p>
+                    <p class="mb-0 text-muted">Designed for Conversational SEO Experts</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <button class="btn btn-primary rounded-circle shadow" id="back-to-top"><i class="bi bi-arrow-up"></i></button>
+    <!-- Back to Top -->
+    <button class="btn btn-primary rounded-circle shadow" id="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
-
 </html>

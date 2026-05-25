@@ -3,32 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Not Found | VoiceSEO Pro</title>
+    <title>404 Page Not Found | VoiceSEO Pro</title>
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body class="bg-body-tertiary">
+<body class="d-flex align-items-center min-vh-100 bg-body-tertiary">
 
-    <div class="container">
-        <div class="row justify-content-center align-items-center min-vh-100 text-center">
-            <div class="col-md-6">
+    <div class="container py-5 text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 animate-up">
+                <!-- Branding logo -->
                 <div class="mb-4">
-                    <i class="bi bi-exclamation-triangle display-1 text-primary"></i>
+                    <a class="navbar-brand d-inline-flex align-items-center fs-2" href="index.html">
+                        <i class="bi bi-mic-fill me-2 text-primary"></i>
+                        <span class="fw-bold">VoiceSEO<span class="text-secondary">Pro</span></span>
+                    </a>
                 </div>
-                <h1 class="display-1 fw-bold">404</h1>
-                <h2 class="mb-4">Oops! Page Not Found</h2>
-                <p class="lead text-muted mb-5">"Hey Alexa, where did this page go?" Even the best AI assistants couldn't find what you were looking for.</p>
-                <div class="d-flex justify-content-center gap-3">
-                    <a href="index.html" class="btn btn-primary btn-lg">Back to Home</a>
-                    <a href="contact.html" class="btn btn-outline-primary btn-lg">Report Issue</a>
+                
+                <h1 class="display-1 fw-bold mb-2 text-gradient" style="font-size: 8rem;">404</h1>
+                <h2 class="display-5 fw-bold mb-4">"I couldn't hear that..."</h2>
+                <p class="lead text-muted mb-5">The URL node you requested does not exist or has been shifted in the knowledge database. Try asking again verbally below or head back home.</p>
+                
+                <!-- Interactive Mic Pulsing Easter Egg -->
+                <div class="d-flex flex-column align-items-center mb-5">
+                    <button class="btn btn-primary rounded-circle p-4 mb-3 position-relative shadow" id="mic-easter-egg" style="width: 80px; height: 80px;">
+                        <i class="bi bi-mic-fill fs-2"></i>
+                        <span class="position-absolute top-50 start-50 translate-middle w-100 h-100 rounded-circle border border-primary border-3 animate-ping opacity-25"></span>
+                    </button>
+                    <span class="small fw-semibold text-muted" id="mic-status">Tap microphone to speak to Siri</span>
+                </div>
+
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="index.html" class="btn btn-primary btn-lg px-5 py-3 fw-bold">Return Home</a>
+                    <a href="contact.html" class="btn btn-outline-secondary btn-lg px-5 py-3 fw-bold">Contact Support</a>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        // Siri-like spoken audio simulation easter egg for 404.html
+        document.getElementById('mic-easter-egg')?.addEventListener('click', function() {
+            const status = document.getElementById('mic-status');
+            status.innerHTML = `<span class="spinner-border spinner-border-sm me-2 text-primary"></span>Listening to spoken intent...`;
+            
+            setTimeout(() => {
+                status.innerHTML = `<i class="bi bi-robot text-success me-2"></i>Siri: "I'm sorry, I couldn't find the requested page node. Redirecting to Homepage in 3 seconds..."`;
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 3000);
+            }, 1500);
+        });
+    </script>
 </body>
 </html>

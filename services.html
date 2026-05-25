@@ -3,36 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services | VoiceSEO Pro</title>
+    <title>Voice SEO Services | VoiceSEO Pro</title>
+    <meta name="description" content="Technical Voice Search Optimization services. Speakable Schema, NLP Auditing, FAQ Restructuring, Local Voice Search coordination.">
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Header -->
-    <header class="navbar navbar-expand-lg sticky-top bg-body">
+    <header class="navbar navbar-expand-xl sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <i class="bi bi-mic-fill me-2"></i>
                 <span>VoiceSEO<span class="text-secondary">Pro</span></span>
             </a>
             
-            <div class="d-flex align-items-center order-lg-3">
-                <button class="btn theme-toggle me-2 d-none d-lg-inline-flex theme-toggle"><i class="bi bi-moon-stars"></i></button>
-                <button class="btn btn-sm btn-outline-primary me-2 d-none d-sm-inline-block d-none d-lg-inline-flex rtl-toggle">RTL</button>
-                <a href="login.html" class="btn btn-primary d-none d-lg-inline-block me-2">Login</a>
-                <a href="register.html" class="btn btn-secondary d-none d-lg-inline-block">Sign Up</a>
+            <div class="d-flex align-items-center order-xl-3">
+                <button class="icon-btn me-2 d-none d-xl-inline-flex theme-toggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </button>
+                <button class="icon-btn me-2 d-none d-xl-inline-flex rtl-toggle">
+                    RTL
+                </button>
+                <a href="login.html" class="btn btn-primary d-none d-xl-inline-block me-2">Login</a>
+                <a href="register.html" class="btn btn-secondary d-none d-xl-inline-block">Sign Up</a>
+                
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary">VoiceSEO Pro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -45,10 +54,10 @@
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="d-lg-none mt-4">
+                    <div class="d-xl-none mt-4 border-top pt-4">
                         <div class="d-flex justify-content-center gap-3 mb-4">
                             <button class="icon-btn theme-toggle">
-                                <i class="bi bi-moon-stars"></i>
+                                <i class="bi bi-moon-stars-fill"></i>
                             </button>
                             <button class="icon-btn rtl-toggle">
                                 RTL
@@ -66,223 +75,197 @@
         <!-- Page Header -->
         <section class="services-header text-center">
             <div class="container py-4">
-                <h1 class="display-1 fw-bold mb-4">Our Services</h1>
+                <h1 class="display-1 fw-bold mb-4">Voice SEO Services</h1>
                 <p class="lead mx-auto opacity-90" style="max-width: 700px;">
-                    From advanced schema markup to natural language content optimization, we provide a full suite of services designed to make your brand the first answer on every smart speaker.
+                    Technical optimization assets designed specifically to capture Position Zero verbal results on Siri, Alexa, Google Assistant, and LLM search agents.
                 </p>
             </div>
         </section>
 
-        <section class="py-5">
-            <div class="container py-5">
-                <div class="row g-4">
-                    <!-- Service 1 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1589254065878-42c9da997008?auto=format&fit=crop&w=400&q=80" alt="Schema" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>Schema Markup</h5>
-                                    <p class="text-muted small">Structured data implementation for rich snippets.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
+        <!-- 6 Core Solutions: Split Layouts -->
+        <section class="py-0">
+            <!-- Service 1: Voice Search SEO -->
+            <div class="row g-0 align-items-center border-bottom">
+                <div class="col-lg-6">
+                    <img src="assets/img/voice_search_seo_optimization.png" alt="Voice Search SEO" class="w-100" style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6" style="padding: 80px 8%;">
+                    <div class="d-flex align-items-center mb-3 gap-3">
+                        <div class="bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="bi bi-mic-fill"></i>
                         </div>
+                        <h2 class="display-6 fw-bold mb-0">Voice Search SEO</h2>
                     </div>
-                    <!-- Service 2 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=400&q=80" alt="NLP" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>NLP Optimization</h5>
-                                    <p class="text-muted small">Aligning content with natural speech patterns.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 3 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=400&q=80" alt="Local" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>Local Voice SEO</h5>
-                                    <p class="text-muted small">Ranking for "near me" voice searches locally.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 4 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80" alt="Audit" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>Conversational Audit</h5>
-                                    <p class="text-muted small">Analyzing how assistants perceive your brand.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 5 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=400&q=80" alt="Keywords" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>Question Research</h5>
-                                    <p class="text-muted small">Finding the exact questions your users ask.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 6 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=400&q=80" alt="Tech" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>Technical Voice SEO</h5>
-                                    <p class="text-muted small">Improving site speed for faster response times.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 7 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80" alt="Analytics" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>Voice Analytics</h5>
-                                    <p class="text-muted small">Tracking performance across all smart speakers.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Service 8 -->
-                    <div class="col-lg-3 col-md-6">
-                        <div class="custom-card p-0 overflow-hidden d-flex flex-column h-100">
-                            <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=400&q=80" alt="AI" class="img-fluid w-100" style="height: 200px; object-fit: cover;">
-                            <div class="p-4 d-flex flex-column flex-grow-1">
-                                <div class="flex-grow-1">
-                                    <h5>AI Answer Engine</h5>
-                                    <p class="text-muted small">Optimizing for ChatGPT and Google SGE results.</p>
-                                </div>
-                                <a href="service-details.html" class="btn btn-sm btn-primary w-100 mt-3">Details</a>
-                            </div>
-                        </div>
-                    </div>
+                    <p class="lead text-muted mb-4">I implement comprehensive Schema.org/Speakable blocks that identify exact copy segments appropriate for text-to-speech rendering by virtual assistants, securing Position Zero.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-3"></i> Valid JSON-LD markup integration</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-3"></i> Zero Schema Linter parse errors</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-outline-primary">View Process</a>
                 </div>
             </div>
-        </section>
-        <!-- Service Packages -->
-        <section class="py-5 bg-body-tertiary">
-            <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2 class="display-5 fw-bold">Service Packages</h2>
-                    <p class="text-muted">Choose the level of optimization that fits your brand.</p>
+
+            <!-- Service 2: Keyword Optimization -->
+            <div class="row g-0 align-items-center border-bottom bg-body-tertiary flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="assets/img/conversational_keywords_analysis.png" alt="Keyword Optimization" class="w-100" style="height: 500px; object-fit: cover;">
                 </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 d-flex">
-                        <div class="p-5 bg-body rounded-4 shadow-sm text-center border-top border-5 border-primary d-flex flex-column flex-fill">
-                            <h4 class="fw-bold">Basic Audit</h4>
-                            <p class="display-6 fw-bold my-4 text-primary">$499<small class="text-muted fs-6">/one-time</small></p>
-                            <ul class="list-unstyled text-start mb-5 flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-primary me-2"></i> <span>Voice Search Gap Analysis</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-primary me-2"></i> <span>Schema Markup Review</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-primary me-2"></i> <span>10 Target Conversational Keywords</span></li>
-                                <li class="mb-3 text-muted d-flex align-items-center"><i class="bi bi-x text-danger me-2"></i> <span>Monthly Performance Tracking</span></li>
-                            </ul>
-                            <a href="pricing.html" class="btn btn-outline-primary w-100 mt-auto py-3 fw-bold">Get Started</a>
+                <div class="col-lg-6" style="padding: 80px 8%;">
+                    <div class="d-flex align-items-center mb-3 gap-3">
+                        <div class="bg-secondary-subtle text-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="bi bi-chat-dots"></i>
                         </div>
+                        <h2 class="display-6 fw-bold mb-0">Keyword Optimization</h2>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="p-5 bg-body rounded-4 shadow-lg text-center border-top border-5 border-secondary position-relative overflow-hidden d-flex flex-column flex-fill">
-                            <div class="position-absolute top-0 end-0 bg-secondary text-white p-2 px-3 small fw-bold">POPULAR</div>
-                            <h4 class="fw-bold">Professional</h4>
-                            <p class="display-6 fw-bold my-4 text-secondary">$1,299<small class="text-muted fs-6">/month</small></p>
-                            <ul class="list-unstyled text-start mb-5 flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-secondary me-2"></i> <span>Full NLP Content Optimization</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-secondary me-2"></i> <span>Local Voice SEO Management</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-secondary me-2"></i> <span>Speakable Schema Integration</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-secondary me-2"></i> <span>Monthly ROI Reports</span></li>
-                            </ul>
-                            <a href="pricing.html" class="btn btn-secondary w-100 mt-auto py-3 fw-bold">Scale Now</a>
+                    <p class="lead text-muted mb-4">I transition your targeting from single keyword strings to long-tail query sequences and natural spoken sentences utilized in AI and voice search.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-3"></i> Spoken Query Intent Mapping Matrix</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-3"></i> Capture low-competition conversational intents</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-outline-secondary">View Process</a>
+                </div>
+            </div>
+
+            <!-- Service 3: Local SEO -->
+            <div class="row g-0 align-items-center border-bottom">
+                <div class="col-lg-6">
+                    <img src="assets/img/local_voice_seo_map.png" alt="Local Voice SEO" class="w-100" style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6" style="padding: 80px 8%;">
+                    <div class="d-flex align-items-center mb-3 gap-3">
+                        <div class="bg-info-subtle text-info rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="bi bi-geo-alt"></i>
                         </div>
+                        <h2 class="display-6 fw-bold mb-0">Local Voice SEO</h2>
                     </div>
-                    <div class="col-lg-4 d-flex">
-                        <div class="p-5 bg-body rounded-4 shadow-sm text-center border-top border-5 border-dark d-flex flex-column flex-fill">
-                            <h4 class="fw-bold">Enterprise AI</h4>
-                            <p class="display-6 fw-bold my-4 text-dark">Custom<small class="text-muted fs-6">/starting at $3k</small></p>
-                            <ul class="list-unstyled text-start mb-5 flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-dark me-2"></i> <span>Answer Engine Optimization (AEO)</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-dark me-2"></i> <span>LLM Training Data Inclusion</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-dark me-2"></i> <span>Multi-Assistant Strategy</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check2 text-dark me-2"></i> <span>Dedicated Strategy Expert</span></li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-dark w-100 mt-auto py-3 fw-bold">Contact Us</a>
+                    <p class="lead text-muted mb-4">Hands-free commands represent over 70% of "Near Me" searches. I secure coordinates, directory profiles, and local hooks so assistants direct clients straight to you.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-info me-3"></i> Coordinate optimization & profiles</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill text-info me-3"></i> Top 3 Maps spot for hands-free queries</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-outline-info">View Process</a>
+                </div>
+            </div>
+
+            <!-- Service 4: Technical SEO -->
+            <div class="row g-0 align-items-center border-bottom bg-body-tertiary flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="assets/img/technical_seo_speed.png" alt="Technical SEO" class="w-100" style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6" style="padding: 80px 8%;">
+                    <div class="d-flex align-items-center mb-3 gap-3">
+                        <div class="bg-danger-subtle text-danger rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="bi bi-speedometer"></i>
                         </div>
+                        <h2 class="display-6 fw-bold mb-0">Technical SEO</h2>
                     </div>
+                    <p class="lead text-muted mb-4">Assistants bypass slow sites. I run technical site speed overhauls to ensure pages load in milliseconds, securing priority indexing for AI bots.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-danger me-3"></i> Advanced PageSpeed optimization</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill text-danger me-3"></i> Under 0.8s mobile Core Web Vitals</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-outline-danger">View Process</a>
+                </div>
+            </div>
+
+            <!-- Service 5: Content Optimization -->
+            <div class="row g-0 align-items-center border-bottom">
+                <div class="col-lg-6">
+                    <img src="assets/img/content_optimization_ai.png" alt="Content Optimization" class="w-100" style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6" style="padding: 80px 8%;">
+                    <div class="d-flex align-items-center mb-3 gap-3">
+                        <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="bi bi-card-text"></i>
+                        </div>
+                        <h2 class="display-6 fw-bold mb-0">Content Optimization</h2>
+                    </div>
+                    <p class="lead text-muted mb-4">I build high-impact FAQ structures and reformat paragraphs specifically to be extracted as featured voice snippets, ensuring your content speaks directly to the user's intent.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-warning me-3"></i> FAQPage structured data markup</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill text-warning me-3"></i> Semantic entity linking for AI</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-outline-warning text-dark border-warning">View Process</a>
+                </div>
+            </div>
+
+            <!-- Service 6: Analytics -->
+            <div class="row g-0 align-items-center bg-body-tertiary flex-lg-row-reverse">
+                <div class="col-lg-6">
+                    <img src="assets/img/voice_analytics_dashboard.png" alt="Voice Analytics" class="w-100" style="height: 500px; object-fit: cover;">
+                </div>
+                <div class="col-lg-6" style="padding: 80px 8%;">
+                    <div class="d-flex align-items-center mb-3 gap-3">
+                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; font-size: 1.25rem;">
+                            <i class="bi bi-graph-up-arrow"></i>
+                        </div>
+                        <h2 class="display-6 fw-bold mb-0">Voice Analytics</h2>
+                    </div>
+                    <p class="lead text-muted mb-4">Stop guessing. I track cross-platform voice rankings, conversational search impressions, and direct AI citations through custom analytics dashboards.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3"></i> Conversational ranking tracking</li>
+                        <li class="d-flex align-items-center"><i class="bi bi-check-circle-fill text-success me-3"></i> Granular ROI analysis on voice traffic</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-outline-success">View Process</a>
                 </div>
             </div>
         </section>
 
-        <!-- Industry Solutions -->
-        <section class="py-5">
+        <!-- Structured Tiered Service Packages -->
+        <section class="py-5 bg-body-tertiary" id="tiered-plans">
             <div class="container py-5">
-                <div class="row align-items-center g-5">
-                    <div class="col-lg-6">
-                        <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80" alt="Industries" class="img-fluid rounded-4 shadow-lg">
+                <div class="text-center mb-5 max-w-700 mx-auto">
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2">Pricing Modules</span>
+                    <h2 class="display-5 fw-bold">Flexible Strategy Tier Options</h2>
+                    <p class="text-muted">A plan matching your business size and technical scale. No hidden fees.</p>
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="custom-card h-100 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Starter</h3>
+                            <div class="h2 fw-bold text-primary mb-3">$499<span class="fs-6 text-muted font-body">/mo</span></div>
+                            <p class="text-muted small">Perfect for localized small operations.</p>
+                            <hr>
+                            <ul class="list-unstyled mb-4 flex-grow-1">
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-primary me-2"></i> Local Voice Audit & Setup</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-primary me-2"></i> 10 FAQ Implementations</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-primary me-2"></i> Monthly Progress Dashboard</li>
+                                <li class="text-muted small"><i class="bi bi-x-circle me-2"></i> Speakable Schema Coding</li>
+                            </ul>
+                            <a href="pricing.html" class="btn btn-outline-primary w-100 mt-auto">Get Started</a>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <h2 class="display-5 fw-bold mb-4">Tailored Solutions for Your Industry</h2>
-                        <p class="lead text-muted mb-5">Voice search behavior varies wildly by industry. We've developed specialized frameworks for high-impact sectors.</p>
-                        
-                        <div class="row g-4">
-                            <div class="col-sm-6">
-                                <div class="custom-card p-4 h-100 border-start border-4 border-primary">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <i class="bi bi-cart3 text-primary h4 mb-0 me-2"></i>
-                                        <h5 class="mb-0 fw-bold">E-commerce</h5>
-                                    </div>
-                                    <p class="small text-muted mb-0">Conversational product discovery and voice cart optimization.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="custom-card p-4 h-100 border-start border-4 border-secondary">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <i class="bi bi-heart-pulse text-secondary h4 mb-0 me-2"></i>
-                                        <h5 class="mb-0 fw-bold">Healthcare</h5>
-                                    </div>
-                                    <p class="small text-muted mb-0">Local appointment booking and symptom-based intent mapping.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="custom-card p-4 h-100 border-start border-4 border-warning">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <i class="bi bi-house text-warning h4 mb-0 me-2"></i>
-                                        <h5 class="mb-0 fw-bold">Real Estate</h5>
-                                    </div>
-                                    <p class="small text-muted mb-0">Property search and localized agent discovery via voice.</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="custom-card p-4 h-100 border-start border-4 border-info">
-                                    <div class="d-flex align-items-center mb-3">
-                                        <i class="bi bi-shop text-info h4 mb-0 me-2"></i>
-                                        <h5 class="mb-0 fw-bold">Local Retail</h5>
-                                    </div>
-                                    <p class="small text-muted mb-0">"Near me" dominance and physical store foot traffic growth.</p>
-                                </div>
-                            </div>
+                    <div class="col-lg-4">
+                        <div class="custom-card border border-primary h-100 d-flex flex-column shadow-lg">
+                            <span class="badge bg-secondary mb-3 align-self-start">Most Popular</span>
+                            <h3 class="fw-bold mb-3">Professional</h3>
+                            <div class="h2 fw-bold text-secondary mb-3">$999<span class="fs-6 text-muted font-body">/mo</span></div>
+                            <p class="text-muted small">Best for scaling agencies & brands.</p>
+                            <hr>
+                            <ul class="list-unstyled mb-4 flex-grow-1">
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Advanced Speakable Schema</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Conversational Keyword Matrices</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-secondary me-2"></i> 50 FAQ Snippet Restructures</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-secondary me-2"></i> Bi-weekly Audits & Reports</li>
+                            </ul>
+                            <a href="pricing.html" class="btn btn-primary w-100 mt-auto">Scale Now</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="custom-card h-100 d-flex flex-column">
+                            <h3 class="fw-bold mb-3">Enterprise</h3>
+                            <div class="h2 fw-bold text-primary mb-3">$1,499<span class="fs-6 text-muted fw-normal">/mo</span></div>
+                            <p class="text-muted small mb-4">Total conversational search authority for high-traffic multi-location platforms.</p>
+                            <hr class="my-4">
+                            <ul class="list-unstyled mb-5">
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> Custom Speakable Schema</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> Conversational FAQ Matrix</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> Local API Syncing (10+ locations)</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> LLM Brand References</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> Real-time Dashboard Access</li>
+                                <li class="mb-3 small"><i class="bi bi-check-circle-fill text-warning me-2"></i> On-site Engineering Consults</li>
+                            </ul>
+                            <a href="pricing.html" class="btn btn-outline-primary w-100 mt-auto">Contact Me</a>
                         </div>
                     </div>
                 </div>
@@ -290,50 +273,44 @@
         </section>
 
         <!-- Delivery Process -->
-        <section class="py-5 bg-dark text-white">
+        <section class="py-5 text-white" style="background: linear-gradient(135deg, #070a13 0%, #111827 100%); border-top: 1px solid rgba(255, 255, 255, 0.05); border-bottom: 1px solid rgba(255, 255, 255, 0.05);">
             <div class="container py-5">
-                <div class="text-center mb-5">
-                    <h2 class="display-5 fw-bold">How We Deliver Results</h2>
-                    <p class="opacity-75">A proven 4-step framework for voice dominance.</p>
+                <div class="text-center mb-5 max-w-700 mx-auto">
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2" style="letter-spacing: 0.1em;">My Methodology</span>
+                    <h2 class="display-5 fw-bold text-white">How I deliver Results</h2>
+                    <p class="text-white-50">A proven 4-step framework for voice dominance.</p>
                 </div>
-                <div class="row g-4">
-                    <div class="col-md-3">
-                        <div class="text-center">
-                            <div class="bg-primary p-4 rounded-circle d-inline-flex mb-4">
-                                <h2 class="mb-0">1</h2>
-                            </div>
-                            <h4>Analysis</h4>
-                            <p class="small opacity-75">We deep-dive into your current conversational visibility and identify gaps.</p>
-                        </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4 bg-primary text-white" style="width: 72px; height: 72px; font-size: 1.8rem; font-weight: 800; line-height: 1; box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);">1</div>
+                        <h4 class="fw-bold mb-3 text-white">Analysis</h4>
+                        <p class="text-white-50 small px-2">I deep-dive into your current conversational visibility and identify gaps.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="text-center">
-                            <div class="bg-secondary p-4 rounded-circle d-inline-flex mb-4">
-                                <h2 class="mb-0">2</h2>
-                            </div>
-                            <h4>Strategy</h4>
-                            <p class="small opacity-75">We map out a custom roadmap focusing on high-intent voice queries.</p>
-                        </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4 bg-secondary text-white" style="width: 72px; height: 72px; font-size: 1.8rem; font-weight: 800; line-height: 1; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">2</div>
+                        <h4 class="fw-bold mb-3 text-white">Strategy</h4>
+                        <p class="text-white-50 small px-2">I map out a custom roadmap focusing on high-intent voice queries.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="text-center">
-                            <div class="bg-tertiary p-4 rounded-circle d-inline-flex mb-4">
-                                <h2 class="mb-0">3</h2>
-                            </div>
-                            <h4>Execution</h4>
-                            <p class="small opacity-75">We implement technical schema, NLP content, and platform integration.</p>
-                        </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4 text-white" style="width: 72px; height: 72px; background-color: var(--tertiary-color, #f59e0b); font-size: 1.8rem; font-weight: 800; line-height: 1; box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);">3</div>
+                        <h4 class="fw-bold mb-3 text-white">Execution</h4>
+                        <p class="text-white-50 small px-2">I implement technical schema, NLP content, and platform integration.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="text-center">
-                            <div class="bg-info p-4 rounded-circle d-inline-flex mb-4">
-                                <h2 class="mb-0">4</h2>
-                            </div>
-                            <h4>Reporting</h4>
-                            <p class="small opacity-75">We track cross-platform rankings and provide detailed ROI analysis.</p>
-                        </div>
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-4 text-white" style="width: 72px; height: 72px; background-color: #06b6d4; font-size: 1.8rem; font-weight: 800; line-height: 1; box-shadow: 0 4px 15px rgba(6, 182, 212, 0.3);">4</div>
+                        <h4 class="fw-bold mb-3 text-white">Reporting</h4>
+                        <p class="text-white-50 small px-2">I track cross-platform rankings and provide detailed ROI analysis.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Security NDA Guarantee Section -->
+        <section class="py-5 bg-primary text-white text-center">
+            <div class="container py-5">
+                <h2 class="display-5 fw-bold mb-3">Rigorous Enterprise Security</h2>
+                <p class="lead mb-4 opacity-80 mx-auto" style="max-width: 600px;">Every project and technical document is protected under a strict NDA agreement from day one.</p>
+                <a href="contact.html" class="btn btn-light btn-lg px-5">Get Your Free Proposal</a>
             </div>
         </section>
     </main>
@@ -347,7 +324,7 @@
                         <i class="bi bi-mic-fill me-2"></i>
                         <span>VoiceSEO<span class="text-secondary">Pro</span></span>
                     </a>
-                    <p class="text-muted pe-lg-5">Empowering businesses to be heard in the age of conversational search and AI assistants.</p>
+                    <p class="text-muted pe-lg-5">Empowering businesses to be heard clearly in the age of conversational search and AI assistants.</p>
                     <div class="d-flex gap-2 mt-4">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
@@ -357,7 +334,7 @@
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-4">Company</h5>
-                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="about.html" class="footer-link">About Me</a>
                     <a href="services.html" class="footer-link">Services</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                     <a href="contact.html" class="footer-link">Contact</a>
@@ -371,7 +348,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p class="text-muted mb-4">Stay ahead of voice search trends.</p>
+                    <p class="text-muted mb-4">Stay ahead of voice search trends with monthly strategies.</p>
                     <form class="input-group">
                         <input type="email" class="form-control" placeholder="Email address" required>
                         <button class="btn btn-primary" type="submit">Join</button>
@@ -384,14 +361,20 @@
                     <p class="mb-0 text-muted">&copy; 2026 VoiceSEO Pro. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-muted">Designed for SEO Professionals</p>
+                    <p class="mb-0 text-muted">Designed for Conversational SEO Experts</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <button class="btn btn-primary rounded-circle shadow" id="back-to-top"><i class="bi bi-arrow-up"></i></button>
+    <!-- Back to Top -->
+    <button class="btn btn-primary rounded-circle shadow" id="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
 </body>
 </html>

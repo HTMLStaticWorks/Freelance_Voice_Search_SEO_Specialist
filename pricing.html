@@ -4,35 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pricing Plans | VoiceSEO Pro</title>
+    <meta name="description" content="Transparent, result-driven Voice SEO investment options. Choose a plan that fits your technical voice rank goals.">
+    
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- Header -->
-    <header class="navbar navbar-expand-lg sticky-top bg-body">
+    <header class="navbar navbar-expand-xl sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <i class="bi bi-mic-fill me-2"></i>
                 <span>VoiceSEO<span class="text-secondary">Pro</span></span>
             </a>
             
-            <div class="d-flex align-items-center order-lg-3">
-                <button class="icon-btn me-2 d-none d-lg-inline-flex theme-toggle"><i class="bi bi-moon-stars"></i></button>
-                <button class="icon-btn me-2 d-none d-lg-inline-flex rtl-toggle">RTL</button>
-                <a href="login.html" class="btn btn-primary d-none d-lg-inline-block me-2">Login</a>
-                <a href="register.html" class="btn btn-secondary d-none d-lg-inline-block">Sign Up</a>
+            <div class="d-flex align-items-center order-xl-3">
+                <button class="icon-btn me-2 d-none d-xl-inline-flex theme-toggle">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </button>
+                <button class="icon-btn me-2 d-none d-xl-inline-flex rtl-toggle">
+                    RTL
+                </button>
+                <a href="login.html" class="btn btn-primary d-none d-xl-inline-block me-2">Login</a>
+                <a href="register.html" class="btn btn-secondary d-none d-xl-inline-block">Sign Up</a>
+                
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary">VoiceSEO Pro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -45,10 +54,10 @@
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="d-lg-none mt-4">
+                    <div class="d-xl-none mt-4 border-top pt-4">
                         <div class="d-flex justify-content-center gap-3 mb-4">
                             <button class="icon-btn theme-toggle">
-                                <i class="bi bi-moon-stars"></i>
+                                <i class="bi bi-moon-stars-fill"></i>
                             </button>
                             <button class="icon-btn rtl-toggle">
                                 RTL
@@ -68,49 +77,65 @@
             <div class="container py-4">
                 <h1 class="display-1 fw-bold mb-4">Pricing Plans</h1>
                 <p class="lead mx-auto opacity-90" style="max-width: 700px;">
-                    Investment options designed for businesses at every stage of their voice SEO journey. Choose a plan that fits your growth goals and technical needs.
+                    Investment options designed for businesses at every stage of their voice search and AI visibility journey.
                 </p>
             </div>
         </section>
 
+        <!-- Pricing Toggle and Cards -->
         <section class="py-5">
             <div class="container py-5">
+                <!-- Interactive Toggle -->
+                <div class="d-flex justify-content-center align-items-center mb-5 gap-3">
+                    <span class="fw-bold fs-5">Monthly Billing</span>
+                    <div class="form-check form-switch fs-4">
+                        <input class="form-check-input cursor-pointer" type="checkbox" id="billingToggle">
+                    </div>
+                    <span class="fw-bold fs-5">Annual Billing <span class="badge bg-success ms-1 fs-6">Save 20%</span></span>
+                </div>
+
                 <div class="row g-4 justify-content-center">
                     <!-- Starter Plan -->
                     <div class="col-lg-4 d-flex">
                         <div class="custom-card border border-primary-subtle text-center d-flex flex-column flex-fill">
                             <h3 class="mb-4 fw-bold">Starter</h3>
-                            <div class="display-4 fw-bold mb-3 text-primary">$499<small class="fs-5 text-muted">/mo</small></div>
+                            <div class="display-4 fw-bold mb-3 text-primary">
+                                <span class="price-val" data-monthly="499" data-annual="399">$499</span>
+                                <small class="fs-5 text-muted">/mo</small>
+                            </div>
                             <p class="text-muted mb-4">Perfect for local small businesses.</p>
                             <hr>
                             <ul class="list-unstyled mb-5 text-start flex-grow-1">
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-2"></i> <span>Local SEO Audit</span></li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-2"></i> <span>10 FAQ Implementations</span></li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-2"></i> <span>Monthly Progress Report</span></li>
-                                <li class="mb-3 text-muted d-flex align-items-center"><i class="bi bi-x-circle me-2"></i> <span>AI Search Optimization</span></li>
-                                <li class="mb-3 text-muted d-flex align-items-center"><i class="bi bi-x-circle me-2"></i> <span>Dedicated Manager</span></li>
+                                <li class="mb-3 text-muted d-flex align-items-center"><i class="bi bi-x-circle me-2"></i> <span>Speakable Schema Markup</span></li>
+                                <li class="mb-3 text-muted d-flex align-items-center"><i class="bi bi-x-circle me-2"></i> <span>Dedicated AI GEO Mapping</span></li>
                             </ul>
                             <a href="contact.html" class="btn btn-outline-primary w-100 mt-auto py-3 fw-bold">Get Started</a>
                         </div>
                     </div>
                     <!-- Pro Plan -->
                     <div class="col-lg-4 d-flex">
-                        <div class="custom-card border border-primary bg-primary text-white text-center d-flex flex-column flex-fill shadow-lg">
+                        <div class="custom-card border border-primary text-center d-flex flex-column flex-fill shadow-lg">
                             <div class="mb-3">
                                 <span class="badge bg-secondary">MOST POPULAR</span>
                             </div>
-                            <h3 class="mb-4 fw-bold text-white">Professional</h3>
-                            <div class="display-4 fw-bold mb-3 text-white">$999<small class="fs-5 opacity-75">/mo</small></div>
-                            <p class="opacity-75 mb-4">Best for growing agencies & brands.</p>
-                            <hr class="opacity-25">
+                            <h3 class="mb-4 fw-bold">Professional</h3>
+                            <div class="display-4 fw-bold mb-3 text-secondary">
+                                <span class="price-val" data-monthly="999" data-annual="799">$999</span>
+                                <small class="fs-5 text-muted">/mo</small>
+                            </div>
+                            <p class="text-muted mb-4">Best for growing agencies & brands.</p>
+                            <hr>
                             <ul class="list-unstyled mb-5 text-start flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>Advanced Schema Markup</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>AI Search Optimization</span></li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>Advanced Speakable Schema</span></li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>AI & GEO Search Optimization</span></li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>50 FAQ Implementations</span></li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>Bi-weekly Reports</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>Email Support</span></li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-secondary me-2"></i> <span>Email & Chat Support</span></li>
                             </ul>
-                            <a href="contact.html" class="btn btn-light w-100 fw-bold mt-auto py-3">Get Started</a>
+                            <a href="contact.html" class="btn btn-secondary w-100 fw-bold mt-auto py-3">Scale Now</a>
                         </div>
                     </div>
                     <!-- Enterprise Plan -->
@@ -121,30 +146,32 @@
                             <p class="text-muted mb-4">For large-scale infrastructure.</p>
                             <hr>
                             <ul class="list-unstyled mb-5 text-start flex-grow-1">
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-tertiary me-2"></i> <span>Custom NLP Integration</span></li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-tertiary me-2"></i> <span>Custom RAG & NLP Integration</span></li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-tertiary me-2"></i> <span>Global Voice Strategy</span></li>
-                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-tertiary me-2"></i> <span>Unlimited Implementations</span></li>
+                                <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-tertiary me-2"></i> <span>Unlimited Node Configurations</span></li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-tertiary me-2"></i> <span>Dedicated 24/7 Support</span></li>
                                 <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-tertiary me-2"></i> <span>On-site Consulting</span></li>
                             </ul>
-                            <a href="contact.html" class="btn btn-outline-warning w-100 mt-auto py-3 fw-bold">Contact Us</a>
+                            <a href="contact.html" class="btn btn-dark w-100 mt-auto py-3 fw-bold">Contact Me</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- Compare Plans Table -->
         <section class="py-5 bg-body-tertiary">
             <div class="container py-5">
                 <div class="text-center mb-5">
-                    <h2 class="display-5 fw-bold">Plan Comparison</h2>
-                    <p class="text-muted">A detailed breakdown of our features.</p>
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2">Exhaustive Comparison</span>
+                    <h2 class="display-5 fw-bold">Detailed Plan Comparison</h2>
+                    <p class="text-muted">A clear, feature-by-feature breakdown of my optimization core.</p>
                 </div>
-                <div class="table-responsive shadow-lg rounded-4 bg-white p-4">
+                <div class="table-responsive shadow rounded-4 bg-white p-4">
                     <table class="table table-hover align-middle mb-0">
                         <thead class="table-light">
                             <tr>
-                                <th class="py-3">Features</th>
+                                <th class="py-3">Features & Metrics</th>
                                 <th class="text-center py-3">Starter</th>
                                 <th class="text-center py-3">Professional</th>
                                 <th class="text-center py-3">Enterprise</th>
@@ -152,40 +179,40 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Voice SEO Audit</td>
+                                <td>Conversational Voice Audit</td>
                                 <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
                                 <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
                                 <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
                             </tr>
                             <tr>
-                                <td>Schema Integration</td>
-                                <td class="text-center text-muted">Basic</td>
-                                <td class="text-center text-primary">Advanced</td>
-                                <td class="text-center text-primary">Custom</td>
+                                <td>Speakable Schema Integration</td>
+                                <td class="text-center text-muted">Basic Nodes</td>
+                                <td class="text-center text-primary fw-bold">Advanced Blocks</td>
+                                <td class="text-center text-primary fw-bold">Custom Development</td>
                             </tr>
                             <tr>
                                 <td>FAQ Content Blocks</td>
-                                <td class="text-center">10</td>
-                                <td class="text-center">50</td>
-                                <td class="text-center">Unlimited</td>
+                                <td class="text-center">10 Pages</td>
+                                <td class="text-center fw-semibold">50 Pages</td>
+                                <td class="text-center fw-bold">Unlimited</td>
                             </tr>
                             <tr>
-                                <td>NLP Content Optimization</td>
+                                <td>LLM & GEO Search Optimization</td>
                                 <td class="text-center text-danger"><i class="bi bi-x-lg"></i></td>
                                 <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
                                 <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
                             </tr>
                             <tr>
-                                <td>Monthly ROI Reporting</td>
-                                <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
+                                <td>Response Latency Technical Overhaul</td>
+                                <td class="text-center text-danger"><i class="bi bi-x-lg"></i></td>
                                 <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
                                 <td class="text-center text-primary"><i class="bi bi-check-lg"></i></td>
                             </tr>
                             <tr>
-                                <td>Support Channels</td>
+                                <td>Support Pipeline</td>
                                 <td class="text-center">Email</td>
                                 <td class="text-center">Email + Chat</td>
-                                <td class="text-center">Dedicated 24/7</td>
+                                <td class="text-center fw-semibold">24/7 Developer Pipeline</td>
                             </tr>
                         </tbody>
                     </table>
@@ -197,15 +224,16 @@
         <section class="py-5">
             <div class="container py-5">
                 <div class="text-center mb-5">
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2">Modular Upgrades</span>
                     <h2 class="display-5 fw-bold">Service Add-ons</h2>
-                    <p class="text-muted">Need a one-time boost? Choose from our standalone services.</p>
+                    <p class="text-muted">Need a one-time boost? Choose from my specialized standalone options.</p>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-4 d-flex">
                         <div class="custom-card flex-fill d-flex flex-column p-4 border-dashed">
                             <div class="flex-grow-1">
                                 <h5 class="fw-bold mb-3">One-Time Voice Audit</h5>
-                                <p class="small text-muted mb-4">A complete deep-dive into your site's conversational performance with actionable fixes.</p>
+                                <p class="small text-muted mb-4">A complete deep-dive into your site's conversational performance, latency indices, and coordinates with actionable technical tickets.</p>
                                 <div class="h4 fw-bold text-primary mb-0">$299</div>
                             </div>
                             <button class="btn btn-outline-primary mt-4 py-2 w-100 fw-bold">Order Now</button>
@@ -214,8 +242,8 @@
                     <div class="col-md-4 d-flex">
                         <div class="custom-card flex-fill d-flex flex-column p-4 border-dashed">
                             <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-3">Schema Setup Pack</h5>
-                                <p class="small text-muted mb-4">Implementation of advanced Speakable and Organization schema for rich results.</p>
+                                <h5 class="fw-bold mb-3">Speakable Schema Setup</h5>
+                                <p class="small text-muted mb-4">Manual configuration and valid JSON-LD implementation of speakable properties targeting your key landing assets.</p>
                                 <div class="h4 fw-bold text-secondary mb-0">$199</div>
                             </div>
                             <button class="btn btn-outline-secondary mt-4 py-2 w-100 fw-bold">Order Now</button>
@@ -224,8 +252,8 @@
                     <div class="col-md-4 d-flex">
                         <div class="custom-card flex-fill d-flex flex-column p-4 border-dashed">
                             <div class="flex-grow-1">
-                                <h5 class="fw-bold mb-3">10 FAQ Content Block</h5>
-                                <p class="small text-muted mb-4">High-impact, question-based content blocks optimized for voice snippets.</p>
+                                <h5 class="fw-bold mb-3">10 FAQ Optimization Block</h5>
+                                <p class="small text-muted mb-4">High-impact, conversational question-based paragraphs customized to fit your niche, optimized for Position Zero featured slots.</p>
                                 <div class="h4 fw-bold text-tertiary mb-0">$399</div>
                             </div>
                             <button class="btn btn-outline-warning mt-4 py-2 w-100 fw-bold">Order Now</button>
@@ -240,9 +268,10 @@
             <div class="container py-5">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6">
+                        <span class="badge bg-secondary mb-3">FAQ Support</span>
                         <h2 class="display-5 fw-bold mb-4">Pricing Questions?</h2>
-                        <p class="lead opacity-75 mb-5">We believe in transparent, result-based pricing. Here are the most common questions our clients ask about our investment plans.</p>
-                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Support" class="img-fluid rounded-4 shadow-lg border border-4 border-white-10">
+                        <p class="lead opacity-75 mb-5">I believe in transparent, result-based pricing. Here are the most common questions my clients ask about my investment plans.</p>
+                        <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=600&q=80" alt="Support Documents" class="img-fluid rounded-4 shadow-lg border border-4 border-white-10">
                     </div>
                     <div class="col-lg-6">
                         <div class="accordion accordion-flush rounded-4 overflow-hidden" id="pricingAccordion">
@@ -254,7 +283,7 @@
                                 </h2>
                                 <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#pricingAccordion">
                                     <div class="accordion-body">
-                                        We track conversational keyword rankings, "Position Zero" appearances, and traffic specifically originating from voice-enabled devices and virtual assistants.
+                                        I track conversational search impressions, "Position Zero" appearances, local directory routing clicks originating from hands-free commands, and direct SGE citations.
                                     </div>
                                 </div>
                             </div>
@@ -266,7 +295,7 @@
                                 </h2>
                                 <div id="q2" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
                                     <div class="accordion-body">
-                                        Yes, you can upgrade or downgrade your plan at any time. Changes will be reflected in your next billing cycle.
+                                        Yes, you can upgrade, downgrade, or suspend your plan at any time. Adjustments will reflect in the subsequent billing cycle.
                                     </div>
                                 </div>
                             </div>
@@ -278,7 +307,7 @@
                                 </h2>
                                 <div id="q3" class="accordion-collapse collapse" data-bs-parent="#pricingAccordion">
                                     <div class="accordion-body">
-                                        Our Professional and Enterprise plans are typically month-to-month. However, we offer significant discounts for 6-month and 12-month commitments.
+                                        All my Standard packages are month-to-month. However, I offer custom billing cycles or substantial discounts (up to 20%) for annual agreements.
                                     </div>
                                 </div>
                             </div>
@@ -298,7 +327,7 @@
                         <i class="bi bi-mic-fill me-2"></i>
                         <span>VoiceSEO<span class="text-secondary">Pro</span></span>
                     </a>
-                    <p class="text-muted pe-lg-5">Empowering businesses to be heard in the age of conversational search and AI assistants.</p>
+                    <p class="text-muted pe-lg-5">Empowering businesses to be heard clearly in the age of conversational search and AI assistants.</p>
                     <div class="d-flex gap-2 mt-4">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
@@ -308,7 +337,7 @@
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-4">Company</h5>
-                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="about.html" class="footer-link">About Me</a>
                     <a href="services.html" class="footer-link">Services</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                     <a href="contact.html" class="footer-link">Contact</a>
@@ -322,7 +351,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p class="text-muted mb-4">Stay ahead of voice search trends.</p>
+                    <p class="text-muted mb-4">Stay ahead of voice search trends with monthly strategies.</p>
                     <form class="input-group">
                         <input type="email" class="form-control" placeholder="Email address" required>
                         <button class="btn btn-primary" type="submit">Join</button>
@@ -335,14 +364,35 @@
                     <p class="mb-0 text-muted">&copy; 2026 VoiceSEO Pro. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-muted">Designed for SEO Professionals</p>
+                    <p class="mb-0 text-muted">Designed for Conversational SEO Experts</p>
                 </div>
             </div>
         </div>
     </footer>
 
-    <button class="btn btn-primary rounded-circle shadow" id="back-to-top"><i class="bi bi-arrow-up"></i></button>
+    <!-- Back to Top -->
+    <button class="btn btn-primary rounded-circle shadow" id="back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
     <script src="assets/js/main.js"></script>
+    <script>
+        // Custom annual/monthly pricing interactive toggle logic
+        document.getElementById('billingToggle')?.addEventListener('change', function(e) {
+            const priceVals = document.querySelectorAll('.price-val');
+            priceVals.forEach(val => {
+                const monthly = val.getAttribute('data-monthly');
+                const annual = val.getAttribute('data-annual');
+                if (e.target.checked) {
+                    val.innerHTML = `$${annual}`;
+                } else {
+                    val.innerHTML = `$${monthly}`;
+                }
+            });
+        });
+    </script>
 </body>
 </html>

@@ -4,14 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VoiceSEO Pro | Freelance Voice Search SEO Specialist</title>
-    <meta name="description" content="Professional Voice Search SEO optimization services to help your business rank on Alexa, Siri, and Google Assistant.">
+    <meta name="description" content="Professional Voice Search SEO optimization services to help your business rank on Alexa, Siri, Google Assistant, and Generative AI engines.">
     
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -19,22 +17,23 @@
 <body>
 
     <!-- Header -->
-    <header class="navbar navbar-expand-lg sticky-top bg-body">
+    <header class="navbar navbar-expand-xl sticky-top">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <i class="bi bi-mic-fill me-2"></i>
                 <span>VoiceSEO<span class="text-secondary">Pro</span></span>
             </a>
             
-            <div class="d-flex align-items-center order-lg-3">
-                <button class="icon-btn me-2 d-none d-lg-inline-flex theme-toggle">
-                    <i class="bi bi-moon-stars"></i>
+            <div class="d-flex align-items-center order-xl-3">
+                <!-- Theme and RTL Toggles -->
+                <button class="icon-btn me-2 d-none d-xl-inline-flex theme-toggle">
+                    <i class="bi bi-moon-stars-fill"></i>
                 </button>
-                <button class="icon-btn me-2 d-none d-lg-inline-flex rtl-toggle">
+                <button class="icon-btn me-2 d-none d-xl-inline-flex rtl-toggle">
                     RTL
                 </button>
-                <a href="login.html" class="btn btn-primary d-none d-lg-inline-block me-2">Login</a>
-                <a href="register.html" class="btn btn-secondary d-none d-lg-inline-block">Sign Up</a>
+                <a href="login.html" class="btn btn-primary d-none d-xl-inline-block me-2">Login</a>
+                <a href="register.html" class="btn btn-secondary d-none d-xl-inline-block">Sign Up</a>
                 
                 <button class="navbar-toggler ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
@@ -42,8 +41,8 @@
             </div>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Menu</h5>
+                <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title fw-bold text-primary">VoiceSEO Pro</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
                 </div>
                 <div class="offcanvas-body">
@@ -56,10 +55,10 @@
                         <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                     </ul>
-                    <div class="d-lg-none mt-4">
+                    <div class="d-xl-none mt-4 border-top pt-4">
                         <div class="d-flex justify-content-center gap-3 mb-4">
                             <button class="icon-btn theme-toggle">
-                                <i class="bi bi-moon-stars"></i>
+                                <i class="bi bi-moon-stars-fill"></i>
                             </button>
                             <button class="icon-btn rtl-toggle">
                                 RTL
@@ -75,128 +74,276 @@
 
     <main>
         <!-- Hero Section -->
-        <section class="hero-section">
+        <section class="hero-section d-flex align-items-center">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10 text-center animate-up">
-                        <span class="badge mb-3 p-2 px-3">Expert Voice Search Optimization</span>
-                        <h1 class="display-2 fw-bold mb-4">Be the Answer for <span class="text-primary">"Hey Alexa"</span></h1>
-                        <p class="lead mb-5 mx-auto" style="max-width: 800px;">I help forward-thinking brands dominate voice search results through advanced NLP optimization and conversational SEO strategies.</p>
-                        <div class="d-flex justify-content-center gap-3">
-                            <a href="services.html" class="btn btn-light btn-lg px-5">Get Started</a>
-                            <a href="contact.html" class="btn btn-outline-light btn-lg px-5">Free Audit</a>
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-10 col-xl-8 mx-auto text-center animate-up">
+                        <span class="badge mb-3 p-2 px-3"><i class="bi bi-mic-fill me-2 text-warning"></i>Alex Morgan &mdash; Freelance Voice Search SEO Specialist</span>
+                        <h1 class="display-3 fw-bold mb-4">Your Customers Are <br>Asking Out Loud &mdash;<br><span class="text-gradient-alt">Are You the Answer?</span></h1>
+                        <p class="lead mb-4 mx-auto" style="font-size: 1.2rem; max-width: 600px;">I help make your business searchable wherever your customers search voice assistant, mobile, or smart device. Whether they ask Siri, Alexa, or Google Assistant, I make sure your brand is the definitive answer.</p>
+                        <p class="lead mb-5 mx-auto" style="font-size: 1.05rem; max-width: 580px;">Stop missing out on the fastest-growing search segment. Let&rsquo;s put your business at <strong class="text-warning">Position Zero</strong> &mdash; the single, authoritative answer read aloud by every smart assistant.</p>
+                        
+                        <div class="d-flex align-items-center justify-content-center gap-3 mb-5 flex-wrap">
+                            <a href="services.html" class="btn btn-light btn-lg px-5">Get Started Free</a>
+                            <a href="contact.html" class="btn btn-outline-light btn-lg px-5"><i class="bi bi-headset me-2"></i>Free Voice Audit</a>
+                        </div>
+                        
+                        <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
+                            <div class="soundwave-wrapper">
+                                <div class="soundwave-bar"></div>
+                                <div class="soundwave-bar"></div>
+                                <div class="soundwave-bar"></div>
+                                <div class="soundwave-bar"></div>
+                                <div class="soundwave-bar"></div>
+                                <span class="text-white small fw-bold ms-2">Voice Active</span>
+                            </div>
+                            <div class="d-flex align-items-center gap-2">
+                                <div class="d-flex">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=40&h=40&fit=crop&crop=face" class="rounded-circle border border-2 border-white" style="width:36px;height:36px;object-fit:cover;margin-right:-10px;" alt="Client">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=40&h=40&fit=crop&crop=face" class="rounded-circle border border-2 border-white" style="width:36px;height:36px;object-fit:cover;margin-right:-10px;" alt="Client">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=40&h=40&fit=crop&crop=face" class="rounded-circle border border-2 border-white" style="width:36px;height:36px;object-fit:cover;" alt="Client">
+                                </div>
+                                <span class="text-white-50 small"><strong class="text-white">500+ clients</strong> rank on voice search</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Why Voice SEO — Full-Width Split Layout -->
+        <section class="py-0" id="why-voice">
+            <div class="row g-0 align-items-stretch">
+                <div class="col-lg-5 d-flex align-items-center" style="background:linear-gradient(135deg,#070a13,#1e1b4b);padding:80px 56px;">
+                    <div>
+                        <span class="text-primary fw-bold text-uppercase d-block mb-3" style="letter-spacing:.1em;">Why It Matters</span>
+                        <h2 class="display-4 fw-bold text-white mb-4" style="line-height:1.1;">55% of consumers<br>search by voice<br><span style="color:var(--tertiary-color);">every single day.</span></h2>
+                        <p class="mb-4" style="color:rgba(255,255,255,.7);">If your competitor is the answer and you aren&rsquo;t, you&rsquo;re losing business silently &mdash; every hour.</p>
+                        <div class="d-flex gap-4">
+                            <div>
+                                <div class="fw-bold fs-2 text-white">70%</div>
+                                <div style="color:rgba(255,255,255,.55);font-size:.85rem;">&ldquo;Near Me&rdquo; queries<br>come from voice</div>
+                            </div>
+                            <div style="width:1px;background:rgba(255,255,255,.12);"></div>
+                            <div>
+                                <div class="fw-bold fs-2 text-white">3.5x</div>
+                                <div style="color:rgba(255,255,255,.55);font-size:.85rem;">More likely to buy<br>after a voice search</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 d-flex align-items-center bg-body-tertiary" style="padding:80px 56px;">
+                    <div class="w-100">
+                        <div class="d-flex gap-4 align-items-start mb-5">
+                            <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle bg-primary-subtle text-primary" style="width:58px;height:58px;font-size:1.4rem;"><i class="bi bi-lightning-charge-fill"></i></div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Be the Instant Answer</h4>
+                                <p class="text-muted mb-0">I optimize for Featured Snippets &mdash; Position Zero &mdash; so your business is the only name Siri or Alexa reads aloud when a customer asks for exactly what you offer.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 align-items-start mb-5">
+                            <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle bg-success-subtle text-success" style="width:58px;height:58px;font-size:1.4rem;"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Win &ldquo;Near Me&rdquo; Searches</h4>
+                                <p class="text-muted mb-0">I set up the local signals and schema that make smart assistants guide ready-to-buy customers straight to your door &mdash; not your competitor&rsquo;s.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex gap-4 align-items-start">
+                            <div class="flex-shrink-0 d-flex align-items-center justify-content-center rounded-circle bg-warning-subtle text-warning" style="width:58px;height:58px;font-size:1.4rem;"><i class="bi bi-cpu-fill"></i></div>
+                            <div>
+                                <h4 class="fw-bold mb-1">Speak AI&rsquo;s Language</h4>
+                                <p class="text-muted mb-0">ChatGPT, Google SGE, and Bing Copilot rely on NLP. I structure your content so every AI engine understands, trusts, and recommends your brand above the competition.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 2: Why Voice SEO -->
-        <section class="py-5">
-            <div class="container py-5">
+        <!-- Dynamic Content Addition: Comparison Section -->
+        <section class="py-5 bg-body-tertiary">
+            <div class="container">
                 <div class="text-center mb-5">
-                    <h2 class="h1">Why Voice Search?</h2>
-                    <p class="text-muted">Over 50% of searches are now conversational.</p>
+                    <span class="text-primary fw-bold text-uppercase">The SEO Shift</span>
+                    <h2 class="display-5 fw-bold">Traditional SEO vs. Conversational SEO</h2>
                 </div>
                 <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="custom-card text-center">
-                            <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&q=80&w=800" alt="Instant Answers" class="card-img-custom rounded-circle mb-4">
-                            <h3>Instant Answers</h3>
-                            <p>Voice users want immediate results. I optimize your content for Featured Snippets.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="custom-card text-center">
-                            <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?auto=format&fit=crop&q=80&w=800" alt="Local Intent" class="card-img-custom rounded-circle mb-4">
-                            <h3>Local Intent</h3>
-                            <p>"Near me" searches are 3x more likely to come from voice commands.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="custom-card text-center">
-                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" alt="NLP Ready" class="card-img-custom rounded-circle mb-4">
-                            <h3>NLP Ready</h3>
-                            <p>We optimize for Natural Language Processing so AI assistants understand you better.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Section 3: Services Preview -->
-        <section class="bg-body-tertiary py-5">
-            <div class="container py-5">
-                <div class="row align-items-center mb-5">
                     <div class="col-lg-6">
-                        <h2 class="h1">Strategic Voice SEO Services</h2>
-                        <p class="text-muted">Tailored solutions for modern search behavior.</p>
-                    </div>
-                    <div class="col-lg-6 text-lg-end">
-                        <a href="services.html" class="btn btn-outline-primary">View All Services</a>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="custom-card text-center d-flex flex-column h-100">
-                            <div class="mb-4 mt-2">
-                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Schema Markup" class="card-img-custom rounded-circle">
-                            </div>
-                            <h4 class="fw-bold">Schema Markup</h4>
-                            <p class="text-muted flex-grow-1">Implementation of structured data that tells search engines exactly what your content is about.</p>
-                            <a href="service-details.html" class="text-primary text-decoration-none fw-bold mt-auto">Learn more →</a>
+                        <div class="custom-card h-100 border-top border-4 border-danger shadow-sm transition-all hover-lift">
+                            <h4 class="fw-bold text-danger mb-4"><i class="bi bi-keyboard me-2"></i>Traditional Keyboard SEO</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-x-circle-fill text-danger me-3 mt-1"></i> <div><strong>Short-tail Keywords:</strong> Users type "best pizza NYC" which leads to static page ranks.</div></li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-x-circle-fill text-danger me-3 mt-1"></i> <div><strong>10 Blue Links:</strong> Competing with a page full of Google Ads and maps.</div></li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-x-circle-fill text-danger me-3 mt-1"></i> <div><strong>Desktop Focus:</strong> Content is structured strictly for visual readability rather than voice rendering.</div></li>
+                                <li class="d-flex align-items-start"><i class="bi bi-x-circle-fill text-danger me-3 mt-1"></i> <div><strong>Low Intent Filters:</strong> Broad search patterns capture high traffic but low conversion.</div></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="custom-card text-center d-flex flex-column h-100">
-                            <div class="mb-4 mt-2">
-                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Long-Tail Keywords" class="card-img-custom rounded-circle">
-                            </div>
-                            <h4 class="fw-bold">Long-Tail Keywords</h4>
-                            <p class="text-muted flex-grow-1">Targeting natural, conversational phrases that real people actually say when using voice assistants.</p>
-                            <a href="service-details.html" class="text-primary text-decoration-none fw-bold mt-auto">Learn more →</a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="custom-card text-center d-flex flex-column h-100">
-                            <div class="mb-4 mt-2">
-                                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&q=80&w=800" alt="FAQ Optimization" class="card-img-custom rounded-circle">
-                            </div>
-                            <h4 class="fw-bold">FAQ Optimization</h4>
-                            <p class="text-muted flex-grow-1">Creating Q&A style content that perfectly aligns with voice query structures.</p>
-                            <a href="service-details.html" class="text-primary text-decoration-none fw-bold mt-auto">Learn more →</a>
+                    <div class="col-lg-6">
+                        <div class="custom-card h-100 border-top border-4 border-success shadow-sm transition-all hover-lift" style="background: rgba(16, 185, 129, 0.03);">
+                            <h4 class="fw-bold text-success mb-4"><i class="bi bi-mic me-2"></i>Voice & AI Search (GEO)</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success me-3 mt-1"></i> <div><strong>Conversational Phrases:</strong> Real questions like "Where is the closest authentic wood-fired pizza open now?".</div></li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success me-3 mt-1"></i> <div><strong>Single Absolute Answer:</strong> Capture "Position Zero" so you are the only option read out.</div></li>
+                                <li class="mb-3 d-flex align-items-start"><i class="bi bi-check-circle-fill text-success me-3 mt-1"></i> <div><strong>Speakable Schema:</strong> Technical code markers directly pointing smart devices to your audio summary.</div></li>
+                                <li class="d-flex align-items-start"><i class="bi bi-check-circle-fill text-success me-3 mt-1"></i> <div><strong>Ultra-High Intent:</strong> Verbal command queries imply an immediate transactional action.</div></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- New Section: AI Driven Analysis -->
-        <section class="py-5 overflow-hidden">
-            <div class="container py-5">
+        <!-- Section 3: Services — Alternating Split Rows -->
+        <section class="py-0" id="services">
+            <!-- Header -->
+            <div class="container pt-5 pb-4">
+                <div class="row align-items-center g-3">
+                    <div class="col-lg-7">
+                        <span class="text-primary fw-bold text-uppercase d-block mb-2">What I Do For You</span>
+                        <h2 class="display-5 fw-bold">Everything You Need to <span class="text-gradient">Get Found by Voice</span></h2>
+                        <p class="text-muted">From smart speaker optimization to AI search visibility &mdash; I handle every layer so your business shows up on every device your customer uses.</p>
+                    </div>
+                    <div class="col-lg-5 text-lg-end">
+                        <a href="services.html" class="btn btn-outline-primary">Explore All 6 Services</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Row 1: Voice Search SEO -->
+            <div class="row g-0 align-items-center border-top">
+                <div class="col-lg-6 order-lg-2 p-4">
+                    <img src="assets/img/voice_search_seo_optimization.png" alt="Voice Search SEO" class="rounded-4 shadow-lg custom-img-hover" style="width:100%;height:400px;object-fit:cover;">
+                </div>
+                <div class="col-lg-6 order-lg-1" style="padding:60px 56px;">
+                    <span class="fw-bold text-primary d-block mb-2" style="font-size:3rem;opacity:.12;line-height:1;">01</span>
+                    <h3 class="fw-bold mb-3">Voice Search SEO</h3>
+                    <p class="text-muted mb-4">I optimize your entire online presence for spoken queries &mdash; structuring content, schema, and page speed so Alexa, Siri, and Google Assistant confidently recommend your business first.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i> Featured Snippet targeting</li>
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i> Speakable schema implementation</li>
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-primary"></i> Page-speed voice readiness audit</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-primary">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            <!-- Row 2: Conversational Keywords -->
+            <div class="row g-0 align-items-center border-top bg-body-tertiary">
+                <div class="col-lg-6 order-lg-1 p-4">
+                    <img src="assets/img/conversational_keywords_analysis.png" alt="Keyword Research" class="rounded-4 shadow-lg custom-img-hover" style="width:100%;height:400px;object-fit:cover;">
+                </div>
+                <div class="col-lg-6 order-lg-2" style="padding:60px 56px;">
+                    <span class="fw-bold text-secondary d-block mb-2" style="font-size:3rem;opacity:.12;line-height:1;">02</span>
+                    <h3 class="fw-bold mb-3">Conversational Keyword Optimization</h3>
+                    <p class="text-muted mb-4">I research the exact long-tail, question-based phrases your customers speak aloud and rebuild your content around them &mdash; capturing high-intent voice traffic competitors miss entirely.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-secondary"></i> Natural language query mapping</li>
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-secondary"></i> Question-intent keyword clusters</li>
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-secondary"></i> FAQ content matrix builds</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-outline-primary">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            <!-- Row 3: Local Voice SEO -->
+            <div class="row g-0 align-items-center border-top">
+                <div class="col-lg-6 order-lg-2 p-4">
+                    <img src="assets/img/local_voice_seo_map.png" alt="Local Voice SEO" class="rounded-4 shadow-lg custom-img-hover" style="width:100%;height:400px;object-fit:cover;">
+                </div>
+                <div class="col-lg-6 order-lg-1" style="padding:60px 56px;">
+                    <span class="fw-bold text-success d-block mb-2" style="font-size:3rem;opacity:.12;line-height:1;">03</span>
+                    <h3 class="fw-bold mb-3">Local Voice SEO</h3>
+                    <p class="text-muted mb-4">I fine-tune your Google Business Profile, local citations, and geo-tagged schema so when someone nearby says &ldquo;find me the best&hellip;&rdquo; &mdash; your business is the answer their smart device reads aloud.</p>
+                    <ul class="list-unstyled mb-4">
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-success"></i> Google Business Profile optimization</li>
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-success"></i> Geo-tagged JSON-LD schema</li>
+                        <li class="mb-2 d-flex align-items-center gap-2"><i class="bi bi-check2-circle text-success"></i> Local citation consistency audit</li>
+                    </ul>
+                    <a href="service-details.html" class="btn btn-primary">Learn More <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            <!-- More services strip -->
+            <div class="text-center py-4 border-top bg-body-tertiary">
+                <p class="text-muted mb-2">Also available: <strong>Technical SEO &amp; Schema Markup</strong>, <strong>Content Optimization</strong>, <strong>Voice Analytics &amp; Reporting</strong></p>
+                <a href="services.html" class="btn btn-outline-primary btn-sm px-4">View All Services &rarr;</a>
+            </div>
+        </section>
+
+        <!-- High-Fidelity UI Mockup: AI Driven Analysis Dashboard Visual -->
+        <section class="py-5 bg-body-tertiary overflow-hidden">
+            <div class="container">
                 <div class="row align-items-center g-5">
                     <div class="col-lg-6 animate-up">
-                        <span class="text-primary fw-bold text-uppercase mb-2 d-block">Next-Gen Technology</span>
-                        <h2 class="display-5 mb-4">Precision Optimization with AI Analysis</h2>
-                        <p class="lead text-muted mb-4">I use proprietary AI-driven tools to analyze conversational patterns and search intent. By understanding the nuances of spoken language, we ensure your brand captures the "Position Zero" in voice results.</p>
-                        <ul class="list-unstyled mb-5">
-                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-3"></i> NLP-Powered Keyword Extraction</li>
-                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-3"></i> Semantic Mapping & Intent Discovery</li>
-                            <li class="mb-3 d-flex align-items-center"><i class="bi bi-check-circle-fill text-primary me-3"></i> Competitor Voice Gap Analysis</li>
-                        </ul>
-                        <a href="about.html" class="btn btn-primary">Learn My Methodology</a>
+                        <span class="text-secondary fw-bold text-uppercase mb-2 d-block">Your Free Voice Audit</span>
+                        <h2 class="display-5 fw-bold mb-4">Find Out <em>Exactly</em> Why Voice Assistants Aren&rsquo;t Recommending You</h2>
+                        <p class="lead text-muted mb-4">Most businesses have no idea they&rsquo;re invisible to voice search. My free audit scans your site for hidden gaps &mdash; slow load times, missing schema, weak conversational signals &mdash; and shows you precisely what it takes to become the answer voice assistants trust.</p>
+                        
+                        <div class="fidelity-container mb-4">
+                            <h5 class="fw-bold mb-3 d-flex align-items-center"><i class="bi bi-cpu text-primary me-2"></i> Live Voice Audit Snapshot</h5>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="small fw-bold">Natural Speech Intelligibility</span>
+                                    <span class="small fw-bold text-secondary">94.6% (Excellent)</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-success" style="width: 94.6%"></div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="small fw-bold">Voice Response Speed</span>
+                                    <span class="small fw-bold text-primary">0.84s (Ideal)</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-primary" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span class="small fw-bold">Speakable Schema Coverage</span>
+                                    <span class="small fw-bold text-warning">42% &mdash; Room to Win</span>
+                                </div>
+                                <div class="progress" style="height: 8px;">
+                                    <div class="progress-bar bg-warning" style="width: 42%"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="contact.html" class="btn btn-primary">Claim My Free Voice Audit</a>
                     </div>
+                    
                     <div class="col-lg-6">
                         <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="AI Analysis" class="img-fluid rounded-4 shadow-lg">
-                            <div class="position-absolute bottom-0 start-0 bg-white p-4 rounded-4 shadow-lg m-4 d-none d-md-block">
-                                <div class="d-flex align-items-center">
-                                    <div class="bg-primary-subtle p-3 rounded-circle me-3">
-                                        <i class="bi bi-cpu text-primary h4 mb-0"></i>
+                            <div class="custom-card bg-dark text-white p-4 shadow-lg border-primary border border-2">
+                                <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom border-secondary">
+                                    <div class="d-flex align-items-center">
+                                        <i class="bi bi-terminal-fill text-primary me-2 fs-4"></i>
+                                        <span class="font-heading fw-bold text-white">Assistant Intent Match Module</span>
                                     </div>
-                                    <div class="text-dark">
-                                        <h6 class="mb-0">99.9% Accuracy</h6>
-                                        <small class="text-muted">In Intent Detection</small>
+                                    <span class="badge bg-secondary">Live Audit Mode</span>
+                                </div>
+                                
+                                <div class="p-3 mb-3 rounded border border-secondary border-opacity-20" style="background: rgba(255, 255, 255, 0.05);">
+                                    <div class="text-warning small mb-1"><i class="bi bi-person-fill"></i> Spoken Voice Query:</div>
+                                    <div class="fst-italic text-white">"Siri, who is the most reliable commercial plumber near me with emergency response?"</div>
+                                </div>
+                                
+                                <div class="p-3 rounded border border-primary border-opacity-20" style="background: rgba(99, 102, 241, 0.08);">
+                                    <div class="text-success small mb-1"><i class="bi bi-robot"></i> Siri Selected Response:</div>
+                                    <div class="fw-semibold text-white">"According to schema coordinates, [Your Business Brand] offers 24/7 emergency calls..."</div>
+                                </div>
+                                
+                                <div class="row g-3 mt-3">
+                                    <div class="col-6">
+                                        <div class="p-3 rounded text-center" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);">
+                                            <h5 class="fw-bold mb-0" style="color: #10b981 !important;">98.9%</h5>
+                                            <small class="text-white-50">Semantic Confidence</small>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="p-3 rounded text-center" style="background: rgba(255, 255, 255, 0.04); border: 1px solid rgba(255, 255, 255, 0.08);">
+                                            <h5 class="fw-bold mb-0" style="color: #6366f1 !important;">1st</h5>
+                                            <small class="text-white-50">Audio Snippet Rank</small>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -206,72 +353,70 @@
             </div>
         </section>
 
-        <!-- Section 4: Stats -->
-        <section class="py-5 bg-primary text-white">
+        <!-- Stats Counter Section -->
+        <section class="py-5 bg-primary text-white position-relative overflow-hidden">
             <div class="container py-4">
                 <div class="row text-center g-4">
-                    <div class="col-md-3">
-                        <div class="stat-card animate-up">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
                             <h2 class="display-4 fw-bold">10+</h2>
-                            <p class="mb-0 opacity-75">Years Experience</p>
+                            <p class="mb-0 opacity-75 fw-medium">Years Active SEO</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="stat-card animate-up" style="transition-delay: 0.1s;">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
                             <h2 class="display-4 fw-bold">500+</h2>
-                            <p class="mb-0 opacity-75">Projects Done</p>
+                            <p class="mb-0 opacity-75 fw-medium">Audits Performed</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="stat-card animate-up" style="transition-delay: 0.2s;">
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
                             <h2 class="display-4 fw-bold">98%</h2>
-                            <p class="mb-0 opacity-75">Client Satisfaction</p>
+                            <p class="mb-0 opacity-75 fw-medium">Voice Rank Success</p>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="stat-card animate-up" style="transition-delay: 0.3s;">
-                            <h2 class="display-4 fw-bold">24/7</h2>
-                            <p class="mb-0 opacity-75">Support</p>
+                    <div class="col-6 col-md-3">
+                        <div class="stat-card">
+                            <h2 class="display-4 fw-bold">3.5x</h2>
+                            <p class="mb-0 opacity-75 fw-medium">Traffic Increase</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Section 5: Workflow -->
-        <section class="py-5">
+        <!-- Section 5: Process — Horizontal Timeline -->
+        <section class="py-5" style="background:linear-gradient(135deg,#070a13 0%,#1e1b4b 100%);">
             <div class="container py-5">
                 <div class="text-center mb-5">
-                    <h2 class="h1">My Optimization Process</h2>
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2" style="letter-spacing:.1em;">My Framework</span>
+                    <h2 class="display-5 fw-bold text-white">My 4-Step Optimization Process</h2>
+                    <p class="text-white-50">A data-backed pipeline to audit, align, execute, and monitor your voice search presence.</p>
                 </div>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-md-3">
-                        <div class="custom-card text-center h-100 p-4">
-                            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=800" alt="Audit" class="card-img-custom rounded-circle">
-                            <h4 class="fw-bold">Audit</h4>
-                            <p class="text-muted small">Deep dive into current performance.</p>
-                        </div>
+                <div class="row g-0">
+                    <div class="col-md-3 text-center px-4 pb-4 pb-md-0">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 bg-primary text-white" style="width:64px;height:64px;font-size:1.5rem;font-weight:800;line-height:1;box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);">1</div>
+                        <div style="height:2px;background:rgba(255,255,255,.1);" class="d-none d-md-block mb-3"></div>
+                        <h5 class="fw-bold text-white mb-2">Gap Audit</h5>
+                        <p class="text-white-50 small">I deep-dive into your conversational search presence, indexing errors, schema gaps, and page speed hurdles.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="custom-card text-center h-100 p-4">
-                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" alt="Strategy" class="card-img-custom rounded-circle">
-                            <h4 class="fw-bold">Strategy</h4>
-                            <p class="text-muted small">Custom roadmap for voice success.</p>
-                        </div>
+                    <div class="col-md-3 text-center px-4 pb-4 pb-md-0">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 bg-secondary text-white" style="width:64px;height:64px;font-size:1.5rem;font-weight:800;line-height:1;box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);">2</div>
+                        <div style="height:2px;background:rgba(255,255,255,.1);" class="d-none d-md-block mb-3"></div>
+                        <h5 class="fw-bold text-white mb-2">NLP Strategy</h5>
+                        <p class="text-white-50 small">I map question sequences, voice queries, and semantic structures that match exactly how your customers speak.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="custom-card text-center h-100 p-4">
-                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=800" alt="Execute" class="card-img-custom rounded-circle">
-                            <h4 class="fw-bold">Execute</h4>
-                            <p class="text-muted small">Implementation of all optimizations.</p>
-                        </div>
+                    <div class="col-md-3 text-center px-4 pb-4 pb-md-0">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 text-white" style="width:64px;height:64px;background-color:var(--tertiary-color);font-size:1.5rem;font-weight:800;line-height:1;box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);" >3</div>
+                        <div style="height:2px;background:rgba(255,255,255,.1);" class="d-none d-md-block mb-3"></div>
+                        <h5 class="fw-bold text-white mb-2">Implementation</h5>
+                        <p class="text-white-50 small">I inject JSON-LD schema, FAQ content matrices, Speakable markup, and Core Web Vitals fixes directly into your site.</p>
                     </div>
-                    <div class="col-md-3">
-                        <div class="custom-card text-center h-100 p-4">
-                            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=800" alt="Report" class="card-img-custom rounded-circle">
-                            <h4 class="fw-bold">Report</h4>
-                            <p class="text-muted small">Tracking growth and visibility.</p>
-                        </div>
+                    <div class="col-md-3 text-center px-4">
+                        <div class="d-inline-flex align-items-center justify-content-center rounded-circle mb-3 text-white" style="width:64px;height:64px;background:#6366f180;font-size:1.5rem;font-weight:800;line-height:1;box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);">4</div>
+                        <div style="height:2px;background:rgba(255,255,255,.1);" class="d-none d-md-block mb-3"></div>
+                        <h5 class="fw-bold text-white mb-2">GEO Reporting</h5>
+                        <p class="text-white-50 small">Monthly dashboards tracking smart assistant mentions, LLM citations, and voice traffic growth &mdash; so you see every win.</p>
                     </div>
                 </div>
             </div>
@@ -281,74 +426,100 @@
         <section class="py-5 bg-body-tertiary">
             <div class="container py-5">
                 <div class="row align-items-center flex-row-reverse g-5">
-                    <div class="col-lg-6 animate-up text-center">
-                        <span class="text-secondary fw-bold text-uppercase mb-2 d-block">Multi-Platform Strategy</span>
-                        <h2 class="display-5 mb-4">Dominate Every Voice Assistant</h2>
-                        <p class="lead text-muted mb-4">Don't limit your reach to a single platform. My strategies are designed to perform across the entire ecosystem of smart devices and virtual assistants.</p>
-                        <div class="row g-4 mb-5">
+                    <div class="col-lg-6 animate-up">
+                        <span class="text-primary fw-bold text-uppercase mb-2 d-block">Every Device. Every Assistant.</span>
+                        <h2 class="display-5 fw-bold mb-4">Your Business, Searchable <span class="text-gradient">Everywhere Your Customers Are</span></h2>
+                        <p class="lead text-muted mb-4">Your customers switch between Alexa at home, Siri on their iPhone, and Google Assistant in the car. I make sure your business is found &mdash; and recommended &mdash; on <em>all of them</em>, not just one.</p>
+                        <div class="row g-3 mb-4">
                             <div class="col-6 col-md-3">
-                                <div class="custom-card p-3 text-center">
+                                <div class="custom-card p-3 text-center h-100">
                                     <i class="bi bi-amazon h2 text-warning mb-2 d-block"></i>
-                                    <small class="fw-bold">Alexa</small>
+                                    <small class="fw-bold">Amazon Alexa</small>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
-                                <div class="custom-card p-3 text-center">
-                                    <i class="bi bi-apple h2 mb-2 d-block"></i>
-                                    <small class="fw-bold">Siri</small>
+                                <div class="custom-card p-3 text-center h-100">
+                                    <i class="bi bi-apple h2 text-dark mb-2 d-block"></i>
+                                    <small class="fw-bold">Apple Siri</small>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
-                                <div class="custom-card p-3 text-center">
+                                <div class="custom-card p-3 text-center h-100">
                                     <img src="https://www.gstatic.com/images/branding/product/2x/googleg_96dp.png" alt="Google Assistant" class="mb-2 d-block mx-auto" style="width: 40px; height: 40px; object-fit: contain;">
-                                    <small class="fw-bold">Assistant</small>
+                                    <small class="fw-bold">Google Assistant</small>
                                 </div>
                             </div>
                             <div class="col-6 col-md-3">
-                                <div class="custom-card p-3 text-center">
+                                <div class="custom-card p-3 text-center h-100">
                                     <i class="bi bi-microsoft h2 text-info mb-2 d-block"></i>
-                                    <small class="fw-bold">Cortana</small>
+                                    <small class="fw-bold">Bing Copilot</small>
                                 </div>
                             </div>
                         </div>
-                        <a href="services.html" class="btn btn-outline-primary">Explore My Services</a>
+                        <a href="services.html" class="btn btn-primary">My Platform Frameworks</a>
                     </div>
-                    <div class="col-lg-6">
-                        <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&q=80&w=800" alt="Smart Speakers" class="img-fluid rounded-4 shadow-lg">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- New Section: Voice-First Content Strategy -->
-        <section class="py-5 position-relative overflow-hidden" style="background: linear-gradient(45deg, #0f172a 0%, #1e293b 100%); color: white;">
-            <div class="container py-5">
-                <div class="row align-items-center g-5">
                     <div class="col-lg-6">
                         <div class="position-relative">
-                            <img src="https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&q=80&w=800" alt="Voice Strategy" class="img-fluid rounded-4 shadow-lg">
-                            <div class="position-absolute top-0 end-0 m-4">
-                                <span class="badge bg-secondary p-2 px-3 shadow">Conversational SEO</span>
+                            <img src="assets/img/voice_search_seo_optimization.png" alt="Smart speakers and voice search devices" class="img-fluid rounded-4 shadow-lg custom-img-hover" style="width:100%;object-fit:cover;max-height:460px;">
+                            <div class="position-absolute bottom-0 start-0 m-3 px-4 py-3 rounded-3 glassmorphism-card" style="border:1px solid rgba(99,102,241,0.3);">
+                                <div class="d-flex align-items-center gap-2 mb-1">
+                                    <i class="bi bi-soundwave text-primary fs-5"></i>
+                                    <span class="text-white fw-bold small">Multi-Platform Reach</span>
+                                </div>
+                                <span class="text-white-50" style="font-size:0.8rem;">Alexa &bull; Siri &bull; Google &bull; Copilot</span>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 animate-up">
-                        <h2 class="display-5 fw-bold mb-4">Optimizing for the Ear, Not Just the Eye</h2>
-                        <p class="lead mb-5 opacity-75">Traditional SEO focuses on short-tail keywords. Voice SEO requires a deep understanding of natural language patterns. I help you bridge the gap between "Search" and "Conversation."</p>
-                        
+                </div>
+            </div>
+        </section>
+
+        <!-- Supported Industries -->
+        <section class="py-5 bg-body-tertiary">
+            <div class="container py-5">
+                <div class="row align-items-center g-5">
+                    <div class="col-lg-5 animate-up">
+                        <span class="text-primary fw-bold text-uppercase d-block mb-2">My Expertise</span>
+                        <h2 class="display-5 fw-bold mb-4">Supported Industries</h2>
+                        <p class="lead text-muted mb-4">While voice search affects every sector, my specialization delivers the highest ROI for industries where conversational intent drives immediate action.</p>
+                        <a href="services.html" class="btn btn-outline-primary">View Digital Marketing Solutions</a>
+                    </div>
+                    <div class="col-lg-7">
                         <div class="row g-4">
-                            <div class="col-md-6">
-                                <div class="custom-card-dark">
-                                    <img src="https://img.icons8.com/color/48/language.png" alt="Language" class="mb-3">
-                                    <h5 class="mb-2 fw-bold text-white">Natural Language</h5>
-                                    <p class="small mb-0 opacity-75 text-white">Optimizing for the way people actually speak, not just how they type.</p>
+                            <div class="col-sm-6 animate-up" style="animation-delay: 0.2s;">
+                                <div class="custom-card h-100 border-start border-4 border-primary">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;"><i class="bi bi-hospital fs-5"></i></div>
+                                        <h5 class="fw-bold mb-0">Healthcare</h5>
+                                    </div>
+                                    <p class="small text-muted mb-0">"Near me" clinic searches, spoken symptom queries, and hands-free appointment bookings.</p>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="custom-card-dark">
-                                    <img src="https://img.icons8.com/color/48/question-mark.png" alt="Question" class="mb-3">
-                                    <h5 class="mb-2 fw-bold text-white">Question-Based</h5>
-                                    <p class="small mb-0 opacity-75 text-white">Capturing high-intent "Who, What, Where, and How" queries.</p>
+                            <div class="col-sm-6 animate-up" style="animation-delay: 0.3s;">
+                                <div class="custom-card h-100 border-start border-4 border-success">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;"><i class="bi bi-shop fs-5"></i></div>
+                                        <h5 class="fw-bold mb-0">Retail</h5>
+                                    </div>
+                                    <p class="small text-muted mb-0">Voice commerce setup, hands-free product catalogs, and direct AI brand citations.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 animate-up" style="animation-delay: 0.4s;">
+                                <div class="custom-card h-100 border-start border-4 border-warning">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;"><i class="bi bi-briefcase fs-5"></i></div>
+                                        <h5 class="fw-bold mb-0">Legal & B2B</h5>
+                                    </div>
+                                    <p class="small text-muted mb-0">High-intent conversational FAQs, structuring complex service entities for LLM agents.</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 animate-up" style="animation-delay: 0.5s;">
+                                <div class="custom-card h-100 border-start border-4 border-info">
+                                    <div class="d-flex align-items-center gap-3 mb-3">
+                                        <div class="bg-info-subtle text-info rounded-circle d-flex align-items-center justify-content-center" style="width:40px;height:40px;"><i class="bi bi-buildings fs-5"></i></div>
+                                        <h5 class="fw-bold mb-0">Hospitality</h5>
+                                    </div>
+                                    <p class="small text-muted mb-0">Local voice SEO maps integration, ensuring Siri/Alexa route tourists directly to you.</p>
                                 </div>
                             </div>
                         </div>
@@ -357,28 +528,39 @@
             </div>
         </section>
 
-        <!-- Section 6: Testimonials -->
-        <section class="py-5">
-            <div class="container py-5 text-center">
-                <h2 class="mb-5">What Clients Say</h2>
-                <div class="row g-4 justify-content-center">
-                    <div class="col-lg-8">
-                        <div class="custom-card">
-                            <i class="bi bi-quote display-1 text-primary-emphasis opacity-25"></i>
-                            <p class="lead italic">"Our traffic from voice assistants doubled in just three months after implementing the conversational keywords strategy. Highly recommended!"</p>
-                            <div class="d-flex align-items-center justify-content-center mt-4">
-                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80" alt="Sarah Johnson" class="testimonial-img">
-                                <div class="text-start ms-3">
-                                    <h5 class="mb-0">Sarah Johnson</h5>
-                                    <small class="text-muted">CEO at TechFlow</small>
-                                </div>
+        <!-- Testimonials — Featured Spotlight Layout -->
+        <section class="py-5 bg-body-tertiary">
+            <div class="container py-5">
+                <div class="text-center mb-5">
+                    <span class="text-primary fw-bold text-uppercase d-block mb-2">Real Results. Real People.</span>
+                    <h2 class="display-5 fw-bold">Businesses Just Like Yours, Now Found by Voice</h2>
+                </div>
+                
+                <!-- Two supporting quotes -->
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="custom-card h-100">
+                            <div class="mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="text-muted mb-4">&ldquo;I had no idea how many customers were searching verbally until Alex ran my audit. The Q&amp;A fixes captured Google SGE citations within the first month.&rdquo;</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=80&q=80" alt="Marcus Brody" class="testimonial-img">
+                                <div><div class="fw-bold">Marcus Brody</div><small class="text-muted">Marketing Director, LocalCart</small></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="custom-card h-100">
+                            <div class="mb-3 text-warning"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+                            <p class="text-muted mb-4">&ldquo;Voice commerce checkout conversions are up 45% since Alex restructured my product catalog for conversational search. The ROI speaks for itself.&rdquo;</p>
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=80&q=80" alt="Elena Rostova" class="testimonial-img">
+                                <div><div class="fw-bold">Elena Rostova</div><small class="text-muted">Founder, CraftMart</small></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
     </main>
 
     <!-- Footer -->
@@ -390,7 +572,7 @@
                         <i class="bi bi-mic-fill me-2"></i>
                         <span>VoiceSEO<span class="text-secondary">Pro</span></span>
                     </a>
-                    <p class="text-muted pe-lg-5">Empowering businesses to be heard in the age of conversational search and AI assistants.</p>
+                    <p class="text-muted pe-lg-5">Empowering businesses to be heard clearly in the age of conversational search and AI assistants.</p>
                     <div class="d-flex gap-2 mt-4">
                         <a href="#" class="social-btn"><i class="bi bi-facebook"></i></a>
                         <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
@@ -400,7 +582,7 @@
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="mb-4">Company</h5>
-                    <a href="about.html" class="footer-link">About Us</a>
+                    <a href="about.html" class="footer-link">About Me</a>
                     <a href="services.html" class="footer-link">Services</a>
                     <a href="blog.html" class="footer-link">Blog</a>
                     <a href="contact.html" class="footer-link">Contact</a>
@@ -414,7 +596,7 @@
                 </div>
                 <div class="col-lg-4 col-md-6">
                     <h5 class="mb-4">Newsletter</h5>
-                    <p class="text-muted mb-4">Stay ahead of voice search trends.</p>
+                    <p class="text-muted mb-4">Stay ahead of voice search trends with monthly strategies.</p>
                     <form class="input-group">
                         <input type="email" class="form-control" placeholder="Email address" required>
                         <button class="btn btn-primary" type="submit">Join</button>
@@ -427,7 +609,7 @@
                     <p class="mb-0 text-muted">&copy; 2026 VoiceSEO Pro. All rights reserved.</p>
                 </div>
                 <div class="col-md-6 text-center text-md-end">
-                    <p class="mb-0 text-muted">Designed for SEO Professionals</p>
+                    <p class="mb-0 text-muted">Designed for Conversational SEO Experts</p>
                 </div>
             </div>
         </div>
