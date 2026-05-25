@@ -43,12 +43,14 @@
 }
 
 /* Global Reset & Scrollbar */
-body {
+html, body {
     font-family: var(--font-body);
     background-color: var(--bg-light);
     color: var(--text-light);
     transition: var(--transition);
     overflow-x: hidden;
+    width: 100vw;
+    max-width: 100%;
 }
 
 [data-bs-theme="dark"] body {
@@ -210,8 +212,16 @@ p.lead {
     padding: 20px 0;
     transition: var(--transition);
     background: rgba(248, 250, 252, 0.8) !important;
-    backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    z-index: -1;
+    pointer-events: none;
 }
 [data-bs-theme="dark"] .navbar {
     background: rgba(7, 10, 19, 0.8) !important;
@@ -557,19 +567,43 @@ footer {
 }
 
 /* Forms & Inputs */
-.form-control, .form-select {
+.form-control, .form-select, .input-group-text {
     padding: 14px 20px;
     border-radius: 12px;
     border: 1.5px solid var(--border-light);
     font-size: 0.95rem;
-    background-color: var(--card-bg-light);
+    background-color: #f1f5f9;
     color: var(--text-light);
     transition: var(--transition);
 }
-[data-bs-theme="dark"] .form-control, [data-bs-theme="dark"] .form-select {
+[data-bs-theme="dark"] .form-control, [data-bs-theme="dark"] .form-select, [data-bs-theme="dark"] .input-group-text {
     border-color: var(--border-dark);
-    background-color: rgba(15, 23, 42, 0.4);
+    background-color: rgba(0, 0, 0, 0.25);
     color: var(--text-dark);
+}
+
+/* Password Toggle Button */
+.btn-password-toggle {
+    background-color: #f1f5f9;
+    border: 1.5px solid var(--border-light);
+    color: var(--text-muted);
+    padding: 0 20px;
+    transition: var(--transition);
+}
+.btn-password-toggle:hover, .btn-password-toggle:focus {
+    background-color: #f1f5f9;
+    color: var(--primary-color);
+    box-shadow: none;
+    border-color: var(--border-light);
+}
+[data-bs-theme="dark"] .btn-password-toggle {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: var(--border-dark);
+}
+[data-bs-theme="dark"] .btn-password-toggle:hover, [data-bs-theme="dark"] .btn-password-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.25);
+    color: var(--primary-color);
+    border-color: var(--border-dark);
 }
 .form-control:focus, .form-select:focus {
     border-color: var(--primary-color);

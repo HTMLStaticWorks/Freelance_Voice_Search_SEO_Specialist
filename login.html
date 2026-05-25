@@ -17,7 +17,7 @@
     <div class="container py-5">
         <div class="row justify-content-center">
             <div class="col-lg-5 col-md-8">
-                <div class="custom-card shadow-lg p-5">
+                <div class="custom-card shadow-lg p-4 p-md-5">
                     <!-- Branding logo -->
                     <div class="text-center mb-4">
                         <a href="index.html" class="navbar-brand d-inline-flex align-items-center fs-2 text-decoration-none text-body">
@@ -32,26 +32,26 @@
                         <div class="mb-3">
                             <label class="form-label fw-semibold">Email Address</label>
                             <div class="input-group">
-                                <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-envelope text-muted"></i></span>
+                                <span class="input-group-text  border-end-0"><i class="bi bi-envelope text-muted"></i></span>
                                 <input type="email" class="form-control border-start-0" placeholder="john@company.com" required>
                             </div>
                         </div>
                         <div class="mb-3">
                             <label class="form-label fw-semibold">Password</label>
                             <div class="input-group">
-                                <span class="input-group-text bg-transparent border-end-0"><i class="bi bi-lock text-muted"></i></span>
+                                <span class="input-group-text  border-end-0"><i class="bi bi-lock text-muted"></i></span>
                                 <input type="password" class="form-control border-start-0 border-end-0" id="loginPassword" placeholder="••••••••" required>
-                                <button class="btn btn-outline-secondary border-start-0" type="button" onclick="togglePassword('loginPassword', this)">
+                                <button class="btn btn-password-toggle border-start-0" type="button" onclick="togglePassword('loginPassword', this)">
                                     <i class="bi bi-eye-fill"></i>
                                 </button>
                             </div>
                         </div>
                         <div class="d-flex justify-content-between align-items-center mb-4">
-                            <div class="form-check mb-0">
+                            <div class="form-check mb-0 text-nowrap">
                                 <input type="checkbox" class="form-check-input" id="rememberMe">
                                 <label class="form-check-label small" for="rememberMe">Remember me</label>
                             </div>
-                            <a href="coming-soon.html" class="small text-primary text-decoration-none auth-link-hover">Forgot Password?</a>
+                            <a href="coming-soon.html" class="small text-primary text-decoration-none auth-link-hover text-nowrap ms-2">Forgot Password?</a>
                         </div>
                         
                         <button type="submit" class="btn btn-primary w-100 py-3 fw-bold mb-3">Login</button>
@@ -62,17 +62,17 @@
                         </div>
 
                         <div class="d-flex gap-3 mb-4">
-                            <a href="#" class="btn btn-light border w-100 d-flex align-items-center justify-content-center shadow-sm fw-semibold text-body auth-social-btn" style="transition: all 0.3s;">
+                            <a href="#" class="btn btn-light border w-100 d-flex align-items-center justify-content-center shadow-sm fw-semibold text-dark auth-social-btn" style="transition: all 0.3s;">
                                 <i class="bi bi-google me-2 text-danger"></i> Google
                             </a>
-                            <a href="#" class="btn btn-light border w-100 d-flex align-items-center justify-content-center shadow-sm fw-semibold text-body auth-social-btn" style="transition: all 0.3s;">
+                            <a href="#" class="btn btn-light border w-100 d-flex align-items-center justify-content-center shadow-sm fw-semibold text-dark auth-social-btn" style="transition: all 0.3s;">
                                 <i class="bi bi-apple me-2 text-dark"></i> Apple
                             </a>
                         </div>
                     </form>
                     
-                    <div class="text-center">
-                        <span class="small text-muted">New to VoiceSEO Pro? <a href="register.html" class="text-primary fw-semibold text-decoration-none auth-link-hover">Sign up free</a></span>
+                    <div class="text-center mt-3">
+                        <span class="small text-muted d-block d-sm-inline mb-2 mb-sm-0">New to VoiceSEO Pro? <a href="register.html" class="text-primary fw-semibold text-decoration-none auth-link-hover ms-sm-1">Sign up free</a></span>
                     </div>
                 </div>
             </div>
